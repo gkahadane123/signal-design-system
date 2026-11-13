@@ -1,0 +1,13 @@
+<p>Motion in Signal is restrained. The signature is a light pulse that travels <i>along</i> the grid lines, slow and sparse enough to read as intelligence at work rather than decoration. Floating particle-mesh backgrounds are explicitly rejected.</p>
+<figure class="stage"><div class="stage-bar"><span>Motion — pulses on the grid</span><a href="guidelines/motion-pulse.html" target="_blank" rel="noopener">Open specimen ↗</a></div><iframe src="guidelines/motion-pulse.html" title="Motion — pulses on the grid" loading="lazy" style="height:168px"></iframe></figure>
+<h2 id="timing">Timing and easing</h2>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Token</th><th>Value</th></tr></thead><tbody><tr><td><code>--ease-out</code></td><td><code>cubic-bezier(.2, .6, .2, 1)</code></td></tr><tr><td><code>--ease-in-out</code></td><td><code>cubic-bezier(.45, 0, .2, 1)</code></td></tr><tr><td><code>--dur-fast</code></td><td>120ms</td></tr><tr><td><code>--dur-base</code></td><td>240ms</td></tr><tr><td><code>--dur-slow</code></td><td>480ms</td></tr></tbody></table></div>
+<h2 id="reduced-motion">Reduced motion</h2>
+<p>Always honor <code>prefers-reduced-motion</code>. With motion off, the static grid remains and nothing is lost.</p>
+
+<h2 id="states">Hover, press and focus</h2>
+<ul>
+<li><b>Prefer non-color cues.</b> Hovers are Ink washes at 4 to 8%, and link underlines thicken.</li>
+<li><b>Primary button:</b> darkens with an Ink 8% overlay on hover and 12% on press. Ghost buttons darken their white fill the same way.</li>
+<li><b>Focus:</b> a 2px Aqua ring, offset 2px, on every interactive element.</li>
+</ul>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Signal design system</title>
-<meta name="description" content="Signal is the design system behind every Intelligence Node product, deck and page: tokens, components, icons and gradients in one language.">
+<meta name="description" content="Signal is the design system behind every Intelligence Node product, deck and page. Read the guidelines for color, type, layout, gradients, icons, voice and components.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="styles.css">
@@ -11,15 +11,16 @@
 <header class="nav"><div class="wrap">
   <a class="brand" href="./"><img src="assets/header-logo.svg" alt="Intelligence Node"><span>Signal</span></a>
   <nav class="nav-links" aria-label="Primary">
-    <a href="docs.html#overview" class="keep">Design system</a>
-    <a href="#system">Foundations</a>
-    <a href="#kits">Kits</a>
+    <a href="docs.html#introduction" class="keep">Design system</a>
+    <a href="#guidelines">Guidelines</a>
+    <a href="docs.html#components">Components</a>
+    <a href="docs.html#kits">Kits</a>
     <a href="https://github.com/gkahadane123/signal-design-system">GitHub</a>
   </nav>
 </div></header>
 
 <nav class="rail" aria-label="Sections">
-  <a href="#top" aria-label="Top"></a><a href="#unified" aria-label="One language"></a><a href="#system" aria-label="The system"></a><a href="#kits" aria-label="Kits"></a><a href="#build" aria-label="Build with Signal"></a>
+  <a href="#top" aria-label="Top"></a><a href="#language" aria-label="One language"></a><a href="#principles" aria-label="Principles"></a><a href="#system" aria-label="The system"></a><a href="#guidelines" aria-label="Guidelines"></a><a href="#paths" aria-label="Start here"></a><a href="#build" aria-label="Build with Signal"></a>
 </nav>
 
 <main>
@@ -31,29 +32,66 @@
       <span class="cursor aqua c2" aria-hidden="true"><i></i><b>Aqua</b></span>
       <span class="cursor astro c3" aria-hidden="true"><i></i><b>Astronaut</b></span>
     </h1>
-    <p class="lede">Signal is the design system behind every Intelligence Node product, deck and page. Tokens, components, icons and gradients, in one language.</p>
+    <p class="lede">Signal is the design system behind every Intelligence Node product, deck and page. Read the guidelines, browse the icons, and build with the same tokens we do.</p>
     <div class="cta">
-      <a class="btn btn-ink" href="docs.html#overview">Explore the system</a>
-      <a class="btn btn-ghost" href="ui_kits/website/index.html">Open the website kit</a>
+      <a class="btn btn-ink" href="docs.html#introduction">Read the guidelines</a>
+      <a class="btn btn-ghost" href="docs.html#install">Install Signal</a>
+    </div>
+
+    <div class="frame sig-grad-night" id="frame" role="img" aria-label="The Intelligence Node monogram on a 32 pixel grid">
+      <span class="pulse p1"></span><span class="pulse p2"></span><span class="pulse v"></span>
+      <img class="mono" src="assets/monogram-white.svg" alt="">
+      <span class="xh a">+</span><span class="xh b">+</span><span class="xh c">+</span><span class="xh d">+</span>
+      <span class="ro tl">32px grid</span>
+      <span class="ro br" id="readout">x 0000 · y 0000</span>
     </div>
   </div>
 </section>
 
-<section class="section" id="unified" data-rail>
-  <div class="wrap unified">
+<section class="section" style="padding-block:0 clamp(48px,6vw,80px)">
+  <div class="wrap">
+    <div class="stats reveal">
+      <div><b>8</b><span>colors, in three tiers</span></div>
+      <div><b>6</b><span>coded gradient themes</span></div>
+      <div><b>151</b><span>duotone icons</span></div>
+      <div><b>17</b><span>React components</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bleed ast" id="language" data-rail>
+  <div class="wrap">
     <div class="reveal">
       <p class="eyebrow">One language</p>
-      <h2 class="h2">A unified design language</h2>
-      <p class="sub">Pricing, availability, assortment, digital shelf and decision each get their own gradient. They all share one grid, one typeface and one palette, so every product feels like the same company.</p>
-      <div class="cta"><a class="btn btn-ghost" href="docs.html#gradients-themes">About the gradients</a></div>
+      <h2 class="h2" style="max-width:12ch">A unified design language</h2>
+      <p class="sub">Six areas of intelligence each get their own gradient. They share one grid, one typeface and one palette, so every product feels like the same company.</p>
+      <div class="cta" style="margin-top:32px"><a class="btn btn-ghost" href="docs.html#gradients">About the gradients</a></div>
     </div>
-    <div class="tiles reveal" aria-label="Product gradients">
-      <div class="tile sig-grad-pricing"><span>Pricing</span></div>
-      <div class="tile sig-grad-availability"><span>Availability</span></div>
-      <div class="tile sig-grad-assortment"><span>Assortment</span></div>
-      <div class="tile sig-grad-digital-shelf"><span>Digital shelf</span></div>
-      <div class="tile sig-grad-decision"><span>Decision</span></div>
-      <div class="tile sig-grad-signal"><span>Signal</span></div>
+    <div class="areas">
+      <div class="area reveal"><div class="t sig-grad-ember"><span>Pricing</span><img src="assets/icons/tag-price-up.svg" alt=""></div><b>Ember</b><p>Red and yellow, for pricing.</p></div>
+      <div class="area reveal"><div class="t sig-grad-depth"><span>Availability</span><img src="assets/icons/truck-clock.svg" alt=""></div><b>Depth</b><p>Teal and blue, for availability.</p></div>
+      <div class="area reveal"><div class="t sig-grad-current"><span>Signal</span><img src="assets/icons/analytics-growth.svg" alt=""></div><b>Current</b><p>Teal, red and blue, for signal.</p></div>
+      <div class="area reveal"><div class="t sig-grad-bloom"><span>Assortment</span><img src="assets/icons/t-shirt.svg" alt=""></div><b>Bloom</b><p>Peach, blue and teal, for assortment.</p></div>
+      <div class="area reveal"><div class="t sig-grad-glow"><span>Digital shelf</span><img src="assets/icons/storefront.svg" alt=""></div><b>Glow</b><p>Peach, yellow and pink, for the digital shelf.</p></div>
+      <div class="area reveal"><div class="t sig-grad-night"><span>Decision</span><img src="assets/icons/target-rank-one.svg" alt=""></div><b>Night</b><p>Indigo and red, for decisions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="principles" data-rail>
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Principles</p>
+      <h2 class="h2">Six rules that hold everywhere</h2>
+      <p class="sub">Each rule has a page that explains it. Each is also the one most often broken by accident.</p>
+    </div>
+    <div class="princ">
+      <a class="pr reveal" href="docs.html#color"><span class="n">01</span><div class="v paper"><i></i></div><h3>Paper is the ground</h3><p>Every page, screen and slide sits on Paper. Surface is for cards on top.</p></a>
+      <a class="pr reveal" href="docs.html#color"><span class="n">02</span><div class="v paper"><span class="btn btn-coral btn-sm">Request a demo</span></div><h3>Coral is for the one action</h3><p>A fill, never small text, and the label on it is white.</p></a>
+      <a class="pr reveal" href="docs.html#typography"><span class="n">03</span><div class="v paper"><span class="aa">Aa</span></div><h3>One typeface</h3><p>Neue Haas Grotesk Display Pro. Hierarchy from weight and size.</p></a>
+      <a class="pr reveal" href="docs.html#color"><span class="n">04</span><div class="v tints"><i style="background:rgb(255 102 102/.12)"></i><i style="background:rgb(255 102 102/.24)"></i><i style="background:rgb(22 20 24/.08)"></i><i style="background:rgb(22 20 24/.24)"></i><i style="background:rgb(61 224 200/.16)"></i><i style="background:rgb(61 224 200/.32)"></i></div><h3>Tints, not new colors</h3><p>Borders and hovers are the eight colors at lower opacity.</p></a>
+      <a class="pr reveal" href="docs.html#iconography"><span class="n">05</span><div class="v paper icons"><img src="assets/icons/ad-shield.svg" alt=""><img src="assets/icons/trophy.svg" alt=""><img src="assets/icons/team-network.svg" alt=""></div><h3>Icons start at 48px</h3><p>The set is drawn for 48, 64 and 96. Never smaller.</p></a>
+      <a class="pr reveal" href="docs.html#voice-and-content"><span class="n">06</span><div class="v say">See change. Understand impact. Act with confidence.</div><h3>Sentence case, no hype</h3><p>Short, declarative, and every number verified and cited.</p></a>
     </div>
   </div>
 </section>
@@ -66,7 +104,7 @@
     </div>
     <div class="bento">
 
-      <a class="card b-color reveal" href="docs.html#colors-primary">
+      <a class="card b-color reveal" href="docs.html#color">
         <h3>Color <small>8 colors</small></h3>
         <div class="sw">
           <div><i style="background:#FF6666"></i><span>Coral</span><code>#FF6666</code></div>
@@ -78,10 +116,10 @@
           <div><i style="background:#FCFBF8"></i><span>Surface</span><code>#FCFBF8</code></div>
           <div><i style="background:#161418"></i><span>Ink</span><code>#161418</code></div>
         </div>
-        <span class="more">Colors</span>
+        <span class="more">Read about color</span>
       </a>
 
-      <a class="card b-type reveal" href="docs.html#type-family">
+      <a class="card b-type reveal" href="docs.html#typography">
         <h3>Typography <small>One typeface</small></h3>
         <div class="spec">
           <div class="aa" aria-hidden="true">Aa</div>
@@ -91,36 +129,36 @@
             <div><span style="font-weight:400;font-size:16px;line-height:1.2">Body copy reads at sixteen.</span><small>400 · 16</small></div>
           </div>
         </div>
-        <span class="more">Typography</span>
+        <span class="more">Read about typography</span>
       </a>
 
-      <a class="card b-grad reveal" href="docs.html#gradients-themes">
+      <a class="card b-grad reveal" href="docs.html#gradients">
         <h3>Gradients <small>6 themes</small></h3>
         <div class="mini" aria-hidden="true">
           <i class="sig-grad-ember"></i><i class="sig-grad-depth"></i><i class="sig-grad-current"></i>
           <i class="sig-grad-bloom"></i><i class="sig-grad-glow"></i><i class="sig-grad-night"></i>
         </div>
-        <span class="more">Gradients</span>
+        <span class="more">Read about gradients</span>
       </a>
 
-      <a class="card b-icon reveal" href="docs.html#icons-set">
+      <a class="card b-icon reveal" href="docs.html#iconography">
         <h3>Iconography <small>151 icons</small></h3>
         <div class="ico" aria-hidden="true">
           <img src="assets/icons/analytics-growth.svg" alt=""><img src="assets/icons/arrows-exchange.svg" alt=""><img src="assets/icons/tag-price-up.svg" alt="">
           <img src="assets/icons/truck-clock.svg" alt=""><img src="assets/icons/storefront.svg" alt=""><img src="assets/icons/target-rank-one.svg" alt="">
         </div>
-        <span class="more">Icons</span>
+        <span class="more">Browse the icons</span>
       </a>
 
-      <a class="card b-tok reveal" href="https://github.com/gkahadane123/signal-design-system/tree/main/tokens">
+      <a class="card b-tok reveal" href="docs.html#install">
         <h3>Tokens <small>CSS variables</small></h3>
         <div class="toks" aria-hidden="true">
           <span>--coral</span><span>--paper</span><span>--ink</span><span>--space-5</span><span>--radius-btn</span><span>--tint-ink-12</span><span>--text-on-coral</span><span>--aqua</span><span>--font-display</span><span>--grid-unit</span><span>--tint-coral-12</span><span>--astronaut</span><span>--radius-card</span><span>--leading-body</span>
         </div>
-        <span class="more">Tokens on GitHub</span>
+        <span class="more">Install the tokens</span>
       </a>
 
-      <a class="card b-comp reveal" href="docs.html#components-forms">
+      <a class="card b-comp reveal" href="docs.html#components">
         <h3>Components <small>React primitives</small></h3>
         <div class="demo-row" aria-hidden="true">
           <span class="btn btn-ink btn-sm">Primary</span>
@@ -134,21 +172,59 @@
           <span class="inp">Search products</span>
           <span class="tabs"><span class="on">Overview</span><span>Pricing</span><span>Assortment</span></span>
         </div>
-        <span class="more">Components</span>
+        <span class="more">Read about components</span>
       </a>
 
-      <a class="card voice b-voice reveal" href="docs.html#brand-voice">
+      <a class="card voice b-voice reveal" href="docs.html#voice-and-content">
         <h3>Brand voice <small>Sentence case</small></h3>
         <q>Precise over promotional.</q>
         <p>Specific, verified figures beat adjectives. Every message ladders back to real-time, trusted intelligence.</p>
-        <span class="more">Voice</span>
+        <span class="more">Read about voice</span>
       </a>
 
     </div>
   </div>
 </section>
 
-<section class="section" id="kits" data-rail style="padding-top:0">
+<section class="section" id="guidelines" data-rail style="padding-top:0">
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Guidelines</p>
+      <h2 class="h2">Read how it all works</h2>
+      <p class="sub">Every foundation has a written page with the rules, the tokens and the reasoning, plus live specimens you can open.</p>
+    </div>
+    <div class="acards">
+      <a class="ac reveal" href="docs.html#color"><div class="cv sig-grad-bloom dk"><b>Color</b></div><span class="pill">Foundations</span><h3>Color</h3><p>Eight colors in three tiers, and the tints that come from them.</p></a>
+      <a class="ac reveal" href="docs.html#typography"><div class="cv sig-grad-night"><b>Typography</b></div><span class="pill">Foundations</span><h3>Typography</h3><p>One typeface. Hierarchy from weight and size alone.</p></a>
+      <a class="ac reveal" href="docs.html#layout"><div class="cv sig-grad-current"><b>Layout</b></div><span class="pill">Foundations</span><h3>Layout and spacing</h3><p>An 8px rhythm, a 32px grid and a short list of radii.</p></a>
+      <a class="ac reveal" href="docs.html#gradients"><div class="cv sig-grad-ember"><b>Gradients</b></div><span class="pill">Foundations</span><h3>Gradients</h3><p>Six coded themes with grain, anchored in the grid.</p></a>
+      <a class="ac reveal" href="docs.html#iconography"><div class="cv sig-grad-glow dk"><b>Icons</b></div><span class="pill">Foundations</span><h3>Iconography</h3><p>151 duotone icons you can search and copy.</p></a>
+      <a class="ac reveal" href="docs.html#motion"><div class="cv sig-grad-depth"><b>Motion</b></div><span class="pill">Foundations</span><h3>Motion and interaction</h3><p>Slow, sparse and purposeful. Light travels along the grid.</p></a>
+      <a class="ac reveal" href="docs.html#logo-and-imagery"><div class="cv sig-grad-night"><b>Logo</b></div><span class="pill pill-coral">Brand</span><h3>Logo and imagery</h3><p>The mark, its clear space, and how to photograph decisions.</p></a>
+      <a class="ac reveal" href="docs.html#voice-and-content"><div class="cv sig-grad-bloom dk"><b>Voice</b></div><span class="pill pill-coral">Brand</span><h3>Voice and content</h3><p>Confident and precise, never hype.</p></a>
+    </div>
+    <div class="allp"><a class="btn btn-ghost" href="docs.html#introduction">See every page</a></div>
+  </div>
+</section>
+
+<section class="paths" id="paths" data-rail>
+  <div class="wrap">
+    <div class="reveal">
+      <p class="eyebrow">Start here</p>
+      <h2 class="h2">Start where you are</h2>
+    </div>
+    <div class="pcols">
+      <div class="pc reveal"><h3>Design</h3><p>Look up a color, set type, find an icon.</p>
+        <ul><li><a href="docs.html#color">Color</a></li><li><a href="docs.html#typography">Typography</a></li><li><a href="docs.html#iconography">Browse the icons</a></li></ul></div>
+      <div class="pc reveal"><h3>Build</h3><p>Link one stylesheet and use the primitives.</p>
+        <ul><li><a href="docs.html#install">Install and use</a></li><li><a href="docs.html#components">Components</a></li><li><a href="ui_kits/website/index.html">Website kit</a></li></ul></div>
+      <div class="pc reveal"><h3>Present and publish</h3><p>Start from a template and write in the right voice.</p>
+        <ul><li><a href="docs.html#voice-and-content">Voice and content</a></li><li><a href="docs.html#logo-and-imagery">Logo and imagery</a></li><li><a href="docs.html#kits">Deck templates</a></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="kits" data-rail>
   <div class="wrap">
     <div class="reveal">
       <p class="eyebrow">Kits and templates</p>
@@ -171,7 +247,7 @@
         <div class="cover sig-grad-depth"><b>Brand Guidelines v02</b></div>
         <span class="pill">Template</span>
         <h3>Brand guidelines</h3>
-        <p>Fourteen slides: voice, logo, colour, type and data.</p>
+        <p>Fourteen slides: voice, logo, color, type and data.</p>
       </a>
     </div>
   </div>
@@ -183,10 +259,10 @@
       <div>
         <p class="eyebrow" style="color:var(--tint-paper-64)">Build with Signal</p>
         <h2 class="h2">One stylesheet. Every token.</h2>
-        <p class="sub">Link <b>styles.css</b> and the whole system comes with it: colour, type, spacing, effects, gradients and base styles.</p>
+        <p class="sub">Link <b>styles.css</b> and the whole system comes with it: color, type, spacing, effects, gradients and base styles.</p>
         <div class="cta">
           <a class="btn btn-coral" href="https://github.com/gkahadane123/signal-design-system">View on GitHub</a>
-          <a class="btn btn-ghost" href="docs.html#overview">Read the docs</a>
+          <a class="btn btn-ghost" href="docs.html#install">Read the install guide</a>
         </div>
       </div>
       <div class="code" role="img" aria-label="Code sample"><span class="c">/* one import */</span>
@@ -203,8 +279,8 @@
 </main>
 
 <footer class="foot"><div class="wrap">
-  <div><img src="assets/header-logo.svg" alt="Intelligence Node"><p style="margin-top:16px">Neue Haas Grotesk Display Pro is licensed and not included in this repository, so specimens here render in the fallback font, Inter.</p></div>
-  <nav aria-label="Footer"><a href="docs.html#overview">Design system</a><a href="docs.html#brand-voice">Brand</a><a href="docs.html#icons-set">Icons</a><a href="https://github.com/gkahadane123/signal-design-system">GitHub</a></nav>
+  <div><img src="assets/header-logo.svg" alt="Intelligence Node"><p style="margin-top:16px">Neue Haas Grotesk Display Pro is licensed and not included in this repository, so pages here render in the fallback font, Inter.</p></div>
+  <nav aria-label="Footer"><a href="docs.html#introduction">Design system</a><a href="docs.html#voice-and-content">Brand</a><a href="docs.html#iconography">Icons</a><a href="docs.html#components">Components</a><a href="https://github.com/gkahadane123/signal-design-system">GitHub</a></nav>
 </div></footer>
 
 <script>
@@ -212,16 +288,18 @@
   var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
   var els=[].slice.call(document.querySelectorAll('.reveal'));
   if('IntersectionObserver' in window && !reduce){
-    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.1});
     els.forEach(function(el){io.observe(el)});
   } else els.forEach(function(el){el.classList.add('in')});
+
   var secs=[].slice.call(document.querySelectorAll('[data-rail]')),dots=[].slice.call(document.querySelectorAll('.rail a'));
-  function mark(){
-    var y=window.innerHeight*.4,cur=0;
-    secs.forEach(function(s,i){if(s.getBoundingClientRect().top<=y)cur=i});
-    dots.forEach(function(d,i){d.classList.toggle('on',i===cur)});
-  }
+  function mark(){var y=window.innerHeight*.4,cur=0;secs.forEach(function(s,i){if(s.getBoundingClientRect().top<=y)cur=i});dots.forEach(function(d,i){d.classList.toggle('on',i===cur)})}
   addEventListener('scroll',mark,{passive:true});addEventListener('resize',mark);mark();
+
+  var frame=document.getElementById('frame'),ro=document.getElementById('readout');
+  function pad(n){n=Math.max(0,Math.round(n));return('0000'+n).slice(-4)}
+  frame.addEventListener('pointermove',function(e){var r=frame.getBoundingClientRect();ro.textContent='x '+pad(e.clientX-r.left)+' · y '+pad(e.clientY-r.top)});
+  frame.addEventListener('pointerleave',function(){ro.textContent='x 0000 · y 0000'});
 })();
 </script>
 </body></html>

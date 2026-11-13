@@ -1,0 +1,128 @@
+[
+ {
+  "key": "introduction",
+  "title": "Introduction",
+  "group": "Get started",
+  "lede": "Signal is the design system behind every Intelligence Node product, deck and page.",
+  "cover": "sig-grad-night"
+ },
+ {
+  "key": "install",
+  "title": "Install and use",
+  "group": "Get started",
+  "lede": "One stylesheet brings in every token. Components and icons come from the same folder.",
+  "cover": "sig-grad-depth"
+ },
+ {
+  "key": "color",
+  "title": "Color",
+  "group": "Foundations",
+  "lede": "Eight colors in three tiers. Every other tint in the interface is one of them at lower opacity.",
+  "cover": "sig-grad-bloom"
+ },
+ {
+  "key": "typography",
+  "title": "Typography",
+  "group": "Foundations",
+  "lede": "One typeface. Hierarchy comes from weight and size alone.",
+  "cover": "sig-grad-night"
+ },
+ {
+  "key": "layout",
+  "title": "Layout and spacing",
+  "group": "Foundations",
+  "lede": "An 8px rhythm, a 32px grid and a short list of radii. Paper underneath, Surface on top.",
+  "cover": "sig-grad-current"
+ },
+ {
+  "key": "gradients",
+  "title": "Gradients",
+  "group": "Foundations",
+  "lede": "Six coded gradients, one per area of intelligence. Smooth blooms with grain, anchored in the grid.",
+  "cover": "sig-grad-ember"
+ },
+ {
+  "key": "iconography",
+  "title": "Iconography",
+  "group": "Foundations",
+  "lede": "A 151-icon duotone line set. Ink carries the structure, coral marks the subject.",
+  "cover": "sig-grad-glow"
+ },
+ {
+  "key": "motion",
+  "title": "Motion and interaction",
+  "group": "Foundations",
+  "lede": "Slow, sparse and purposeful. Light travels along the grid.",
+  "cover": "sig-grad-depth"
+ },
+ {
+  "key": "logo-and-imagery",
+  "title": "Logo and imagery",
+  "group": "Brand",
+  "lede": "A dot-density sphere and a wordmark, and photography of real people making decisions.",
+  "cover": "sig-grad-night"
+ },
+ {
+  "key": "voice-and-content",
+  "title": "Voice and content",
+  "group": "Brand",
+  "lede": "Confident and precise, never hype. The authority of the data, not the tone of a vendor.",
+  "cover": "sig-grad-bloom"
+ },
+ {
+  "key": "components",
+  "title": "Components",
+  "group": "Components",
+  "lede": "Seventeen React primitives, styled entirely from tokens, with typed props and usage notes.",
+  "cover": "sig-grad-signal"
+ },
+ {
+  "key": "c-forms",
+  "title": "Forms",
+  "group": "Components",
+  "lede": "Buttons and the form controls.",
+  "cover": "sig-grad-current"
+ },
+ {
+  "key": "c-display",
+  "title": "Display",
+  "group": "Components",
+  "lede": "Cards, tags and verified stats.",
+  "cover": "sig-grad-bloom"
+ },
+ {
+  "key": "c-brand",
+  "title": "Brand components",
+  "group": "Components",
+  "lede": "The logo, the line grid and gradient tiles.",
+  "cover": "sig-grad-night"
+ },
+ {
+  "key": "c-overlay",
+  "title": "Overlay",
+  "group": "Components",
+  "lede": "Dialogs, toasts and tooltips.",
+  "cover": "sig-grad-ember"
+ },
+ {
+  "key": "c-navigation",
+  "title": "Navigation",
+  "group": "Components",
+  "lede": "Tabs.",
+  "cover": "sig-grad-depth"
+ },
+ {
+  "key": "c-icons",
+  "title": "Icon",
+  "group": "Components",
+  "lede": "The 151-icon duotone set as a component.",
+  "cover": "sig-grad-glow"
+ },
+ {
+  "key": "kits",
+  "title": "Kits and templates",
+  "group": "Kits and templates",
+  "lede": "Start from something built: a marketing-site kit and two slide templates.",
+  "cover": "sig-grad-ember"
+ }
+]

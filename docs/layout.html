@@ -1,0 +1,19 @@
+<p>Layout in Signal is built on a hairline grid. The 32px line grid is the brand’s structural substrate: content and gradients align to its columns, and technical framing such as ticks and crosshairs hangs off it.</p>
+
+<h2 id="grid">The grid</h2>
+<ul>
+<li><b>Container:</b> 1200px, with a 760px narrow container for reading.</li>
+<li><b>Gutter:</b> 24px.</li>
+<li><b>Grid unit:</b> 32px, drawn as a hairline grid in Ink at 8% opacity. Grid lines are neutral, never coral.</li>
+</ul>
+<figure class="stage"><div class="stage-bar"><span>Line-grid substrate</span><a href="guidelines/grid-line.html" target="_blank" rel="noopener">Open specimen ↗</a></div><iframe src="guidelines/grid-line.html" title="Line-grid substrate" loading="lazy" style="height:178px"></iframe></figure>
+<h2 id="spacing">Spacing</h2>
+<p>Spacing follows an 8px rhythm with a 4px half-step.</p>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Token</th><th>Value</th></tr></thead><tbody><tr><td><code>--space-1</code></td><td>4px</td></tr><tr><td><code>--space-2</code></td><td>8px</td></tr><tr><td><code>--space-3</code></td><td>12px</td></tr><tr><td><code>--space-4</code></td><td>16px</td></tr><tr><td><code>--space-5</code></td><td>24px</td></tr><tr><td><code>--space-6</code></td><td>32px</td></tr><tr><td><code>--space-7</code></td><td>48px</td></tr><tr><td><code>--space-8</code></td><td>64px</td></tr><tr><td><code>--space-9</code></td><td>96px</td></tr><tr><td><code>--space-10</code></td><td>128px</td></tr></tbody></table></div><figure class="stage"><div class="stage-bar"><span>Spacing scale</span><a href="guidelines/spacing-scale.html" target="_blank" rel="noopener">Open specimen ↗</a></div><iframe src="guidelines/spacing-scale.html" title="Spacing scale" loading="lazy" style="height:158px"></iframe></figure>
+<h2 id="surfaces">Paper and Surface</h2>
+<p>Paper is the page. Surface is reserved for elevated things that sit on Paper: cards, panels, inputs and dialogs. Surface is never a page or band background. For full-bleed variety, use the line grid on Paper, or a dark band in Ink, Astronaut or Reef with Paper text.</p>
+
+<h2 id="radius">Radius, borders and shadow</h2>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Element</th><th>Radius</th></tr></thead><tbody><tr><td>Buttons</td><td>Fully rounded pill, <code>--radius-btn: 999px</code></td></tr><tr><td>Inputs</td><td>8px</td></tr><tr><td>Cards</td><td>16px, or 12px for small cards</td></tr><tr><td>Chips and tags</td><td>6px</td></tr></tbody></table></div>
+<p>Borders are hairlines, Ink at 12%. Shadows are warm and subtle: cards use <code>--shadow-card</code> (<code>0 1px 2px</code> and <code>0 8px 24px</code>, both Ink at a few percent), popovers use the deeper <code>--shadow-pop</code>. There are no inner shadows, and no glassmorphism as a motif.</p>
+<figure class="stage"><div class="stage-bar"><span>Radii &amp; hairlines</span><a href="guidelines/radius-borders.html" target="_blank" rel="noopener">Open specimen ↗</a></div><iframe src="guidelines/radius-borders.html" title="Radii &amp; hairlines" loading="lazy" style="height:158px"></iframe></figure>

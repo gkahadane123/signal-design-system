@@ -1,0 +1,25 @@
+<p>Each of the six themes is named by mood and carries one area of Intelligence Node’s work. They are built in CSS from layered radial blooms plus a grain texture. The grain is mandatory: it is a large part of why the gradients read as premium.</p>
+
+<h2 id="themes">The six themes</h2>
+<div class="grad-grid">
+<div class="g sig-grad-ember"><b>Ember</b><span>Red and yellow</span><em>Pricing</em></div>
+<div class="g sig-grad-depth"><b>Depth</b><span>Teal and blue</span><em>Availability</em></div>
+<div class="g sig-grad-current"><b>Current</b><span>Teal, red and blue</span><em>Signal</em></div>
+<div class="g sig-grad-bloom dk"><b>Bloom</b><span>Peach, blue and teal</span><em>Assortment</em></div>
+<div class="g sig-grad-glow dk"><b>Glow</b><span>Peach, yellow and pink</span><em>Digital shelf</em></div>
+<div class="g sig-grad-night"><b>Night</b><span>Indigo and red</span><em>Decision</em></div>
+</div>
+<figure class="stage"><div class="stage-bar"><span>Six coded gradients</span><a href="guidelines/gradients-themes.html" target="_blank" rel="noopener">Open specimen ↗</a></div><iframe src="guidelines/gradients-themes.html" title="Six coded gradients" loading="lazy" style="height:198px"></iframe></figure>
+<h2 id="usage">Using them</h2>
+<ul>
+<li>Apply a class, <code>.sig-grad-ember</code> and so on, to a section, tile or panel. They work best as <b>full-bleed section backgrounds</b>.</li>
+<li><b>Dark themes</b> (Ember, Depth, Current, Night) take Paper text. <b>Light themes</b> (Bloom, Glow) take Ink.</li>
+<li><b>Anchor them in the grid.</b> Put a gradient inside a frame, a tile, a wash or a section, never as a free-floating blob.</li>
+<li>Do not rebuild them ad hoc. The classes are the source of truth; the 2400px PNG masters in <code>assets/gradients/</code> are for print and design-tool image fills.</li>
+</ul>
+<pre class="code2"><code>&lt;section class=&quot;sig-grad-night&quot; style=&quot;color: var(--paper)&quot;&gt;
+  &lt;h2 class=&quot;t-display-2&quot;&gt;Decision&lt;/h2&gt;
+&lt;/section&gt;</code></pre>
+<h2 id="hues">The extended hues</h2>
+<p>The gradients use a wider set of hues than the palette. Those hues live <b>only inside gradients</b>. They are never standalone swatches, interface colors or text colors.</p>
+<figure class="stage"><div class="stage-bar"><span>Extended gradient hues</span><a href="guidelines/gradients-hues.html" target="_blank" rel="noopener">Open specimen ↗</a></div><iframe src="guidelines/gradients-hues.html" title="Extended gradient hues" loading="lazy" style="height:128px"></iframe></figure>

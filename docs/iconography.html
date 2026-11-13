@@ -1,0 +1,25 @@
+<p>The brand ships one icon set, and it replaces any third-party set. Do not substitute Lucide, Heroicons or hand-drawn glyphs: the set exists so that every product speaks with the same marks.</p>
+
+<h2 id="browse">Browse the set</h2>
+<p>Search by name or tag, filter by category, and click an icon to copy its name.</p>
+<div class="icon-browser" data-icons></div>
+
+<h2 id="construction">How the icons are built</h2>
+<ul>
+<li><b>Grid:</b> 96px, with a 3px stroke, round caps and joins, and a 2px content margin.</li>
+<li><b>Two colors only:</b> Ink (<code>#4D4F5C</code>, emitted as <code>currentColor</code>) carries structure. Coral (<code>#FF6666</code>) marks the icon’s <i>subject</i>, the thing it is about, never decoration. The accent dot is 7.5px, five times the stroke.</li>
+<li><b>No third color.</b> A <code>mono</code> variant collapses the accent into <code>currentColor</code>.</li>
+</ul>
+<figure class="stage"><div class="stage-bar"><span>Icon rules</span><a href="guidelines/icons-rules.html" target="_blank" rel="noopener">Open specimen ↗</a></div><iframe src="guidelines/icons-rules.html" title="Icon rules" loading="lazy" style="height:198px"></iframe></figure>
+<h2 id="size">Size floor: 48px</h2>
+<p>Use 48, 64 or 96px. A 3px stroke on a 96px grid renders at 0.75px at 24px and falls apart, so the set has a hard floor of 48px. Smaller sizes need a separately drawn tier rather than a scale-down.</p>
+<div class="dd"><div class="do"><b>Do</b><p>Use icons at 48, 64 or 96px.</p></div><div class="dont"><b>Don’t</b><p>Scale an icon down to 24px, or recolor it with a third color.</p></div></div>
+<h2 id="categories">Categories</h2>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>Category</th><th>Icons</th></tr></thead><tbody><tr><td>Commerce and retail</td><td>25</td></tr><tr><td>Status and markers</td><td>19</td></tr><tr><td>Analytics</td><td>17</td></tr><tr><td>Finance</td><td>13</td></tr><tr><td>Actions and navigation</td><td>12</td></tr><tr><td>Logistics</td><td>12</td></tr><tr><td>People and support</td><td>11</td></tr><tr><td>Media and files</td><td>10</td></tr><tr><td>Data</td><td>9</td></tr><tr><td>Shapes and layout</td><td>9</td></tr><tr><td>Time</td><td>6</td></tr><tr><td>Devices</td><td>5</td></tr><tr><td>Developer</td><td>3</td></tr></tbody></table></div>
+<h2 id="use">Using an icon</h2>
+<pre class="code2"><code>&lt;Icon name=&quot;shield-check&quot; title=&quot;Verified&quot; /&gt;   // 48px, ink + coral accent
+&lt;Icon name=&quot;analytics-growth&quot; size={64} /&gt;
+&lt;Icon name=&quot;package-scan&quot; mono /&gt;               // single color
+&lt;Icon name=&quot;arrows-exchange&quot; accent=&quot;var(--aqua)&quot; /&gt;</code></pre>
+<p>Or use the SVG directly: <code>assets/icons/&lt;name&gt;.svg</code>. Icon names are still provisional while the source review sheet is signed off, so pin to a version if you depend on one.</p>
+<figure class="stage"><div class="stage-bar"><span>Icon set</span><a href="guidelines/icons-set.html" target="_blank" rel="noopener">Open specimen ↗</a></div><iframe src="guidelines/icons-set.html" title="Icon set" loading="lazy" style="height:238px"></iframe></figure>

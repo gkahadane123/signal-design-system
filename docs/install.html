@@ -1,0 +1,41 @@
+<p>Signal is plain CSS custom properties plus a small set of React primitives. There is nothing to compile to use the tokens.</p>
+
+<h2 id="stylesheet">Link the stylesheet</h2>
+<p><code>styles.css</code> is the only stylesheet you link. It imports everything in <code>tokens/</code>.</p>
+<pre class="code2"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;signal-design-system/styles.css&quot;&gt;
+
+/* or, from CSS */
+@import &quot;signal-design-system/styles.css&quot;;</code></pre>
+<div class="tbl-wrap"><table class="tbl"><thead><tr><th>File</th><th>Defines</th></tr></thead><tbody><tr><td><code>tokens/colors.css</code></td><td>The eight colors, opacity tints and semantic aliases such as <code>--bg</code> and <code>--text-on-coral</code>.</td></tr><tr><td><code>tokens/typography.css</code></td><td>The type scale, tracking and leading, plus <code>.t-display-1</code> through <code>.t-label</code>.</td></tr><tr><td><code>tokens/spacing.css</code></td><td>The 8px rhythm, the 32px grid unit and container widths.</td></tr><tr><td><code>tokens/effects.css</code></td><td>Radii, shadows, easing and durations.</td></tr><tr><td><code>tokens/gradients.css</code></td><td>The six <code>.sig-grad-*</code> classes, grain included.</td></tr><tr><td><code>tokens/icons.css</code></td><td>Icon ink and accent variables.</td></tr><tr><td><code>tokens/fonts.css</code></td><td>The <code>@font-face</code> rules for NHG Display Pro.</td></tr><tr><td><code>tokens/base.css</code></td><td>Body, link, selection and focus defaults.</td></tr></tbody></table></div>
+<h2 id="fonts">Add the fonts</h2>
+<p>Neue Haas Grotesk Display Pro is a licensed typeface, so the font files are not in this repository. Put your licensed copies in <code>fonts/</code> using the filenames listed in <a href="https://github.com/gkahadane123/signal-design-system/blob/main/fonts/README.md" target="_blank" rel="noopener"><code>fonts/README.md</code></a>. Without them the stack falls back to Inter, which is why this site renders in Inter.</p>
+
+<h2 id="tokens-in-use">Use the tokens</h2>
+<pre class="code2"><code>.cta {
+  background: var(--coral);
+  color: var(--text-on-coral);   /* white, always */
+  border-radius: var(--radius-btn);
+  padding: 0 var(--space-5);
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+}</code></pre>
+<h2 id="react">Use the React primitives</h2>
+<p>The components are compiled into <code>_ds_bundle.js</code>, which exposes them on <code>window.SignalDesignSystem_167090</code>. The <a href="ui_kits/website/index.html" target="_blank" rel="noopener">website kit</a> is built this way.</p>
+<pre class="code2"><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;signal-design-system/styles.css&quot;&gt;
+&lt;script src=&quot;https://unpkg.com/react@18.3.1/umd/react.development.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;signal-design-system/_ds_bundle.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+  const { Button, Input, Tag } = window.SignalDesignSystem_167090;
+  // &lt;Button&gt;Request a demo&lt;/Button&gt;
+&lt;/script&gt;</code></pre>
+<p>Every component has its own page with props and examples: <a href="docs.html#components">Components</a>.</p>
+
+<h2 id="agents">Use it with an AI agent</h2>
+<p>The repository root contains <code>SKILL.md</code>, which packages the system as an agent skill. Copy the folder into your skills directory and an agent can read the guidelines and build on-brand screens without being told the rules each time.</p>

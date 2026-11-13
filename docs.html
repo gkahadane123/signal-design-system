@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Design system · Signal</title>
+<meta name="description" content="Read the Signal design system: foundations, brand, components, kits and templates for Intelligence Node.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="styles.css">
@@ -10,8 +11,9 @@
 <header class="nav"><div class="wrap">
   <a class="brand" href="./"><img src="assets/header-logo.svg" alt="Intelligence Node"><span>Signal</span></a>
   <nav class="nav-links" aria-label="Primary">
-    <a href="docs.html#overview" aria-current="page" class="keep">Design system</a>
-    <a href="./#kits">Kits</a>
+    <a href="docs.html#introduction" aria-current="page" class="keep">Design system</a>
+    <a href="./#guidelines">Guidelines</a>
+    <a href="docs.html#kits">Kits</a>
     <a href="https://github.com/gkahadane123/signal-design-system">GitHub</a>
     <button class="btn btn-ghost btn-sm menu-btn keep" id="menu" aria-expanded="false" aria-controls="side">Browse</button>
   </nav>
@@ -19,60 +21,8 @@
 
 <div class="docs">
   <aside class="side" id="side" aria-label="Design system navigation"></aside>
-  <main class="doc" id="doc"></main>
+  <main class="doc" id="doc" tabindex="-1"><p style="padding:48px">Loading…</p></main>
 </div>
-
-<script>
-var PAGES=[{"key": "colors-primary", "group": "Colors", "name": "Primary — Coral", "sub": "The brand. Fills, CTAs, accents. Display-only — never small text.", "src": "guidelines/colors-primary.html", "vw": 700, "vh": 150}, {"key": "colors-regular", "group": "Colors", "name": "Regular — Neutrals", "sub": "Warm neutrals, never cold white or pure black. All text is Ink.", "src": "guidelines/colors-regular.html", "vw": 700, "vh": 150}, {"key": "colors-secondary", "group": "Colors", "name": "Secondary", "sub": "Marketing collateral. Aqua doubles as the semantic signal color.", "src": "guidelines/colors-secondary.html", "vw": 700, "vh": 150}, {"key": "colors-tints", "group": "Colors", "name": "Opacity tints", "sub": "All UI tints derive from the eight via opacity — no other named colors exist.", "src": "guidelines/colors-tints.html", "vw": 700, "vh": 140}, {"key": "colors-contrast", "group": "Colors", "name": "Verified contrast pairings", "sub": "Body text is Ink. Text on coral fills is white (brand rule).", "src": "guidelines/colors-contrast.html", "vw": 700, "vh": 160}, {"key": "type-family", "group": "Type", "name": "One typeface", "sub": "Neue Haas Grotesk only — hierarchy from weight and size. Inter is the approved web stand-in.", "src": "guidelines/type-family.html", "vw": 700, "vh": 160}, {"key": "type-display", "group": "Type", "name": "Display scale", "sub": "NHG Display Pro 600, tracking −0.02em, from 28px up.", "src": "guidelines/type-display.html", "vw": 700, "vh": 240}, {"key": "type-text", "group": "Type", "name": "Text & data", "sub": "NHG Display Pro below 28px. Tabular numerals for data. Uppercase only for tiny labels.", "src": "guidelines/type-text.html", "vw": 700, "vh": 210}, {"key": "gradients-themes", "group": "Gradients", "name": "Six coded gradients", "sub": "Ember · Depth · Current · Bloom · Glow · Night — section backgrounds via .sig-grad-<name>.", "src": "guidelines/gradients-themes.html", "vw": 700, "vh": 190}, {"key": "gradients-hues", "group": "Gradients", "name": "Extended gradient hues", "sub": "Allowed ONLY inside gradients — never as swatches, UI, or text.", "src": "guidelines/gradients-hues.html", "vw": 700, "vh": 120}, {"key": "brand-logo", "group": "Brand", "name": "Logo", "sub": "Dot-density sphere — never rebuild the dots. White mark on dark/coral; never on mid-tones.", "src": "guidelines/brand-logo.html", "vw": 700, "vh": 180}, {"key": "brand-voice", "group": "Brand", "name": "Voice", "sub": "Confident and precise, never hype. The authority of the data.", "src": "guidelines/brand-voice.html", "vw": 700, "vh": 190}, {"key": "brand-photography", "group": "Brand", "name": "Photography", "sub": "Real people in real retail contexts — documentary, natural light, warm grade. No stock clichés, no rendered people.", "src": "guidelines/brand-photography.html", "vw": 700, "vh": 140}, {"key": "brand-claims", "group": "Brand", "name": "Verified claims", "sub": "Only VERIFIED Claims-Register numbers may appear externally, cited in scope.", "src": "guidelines/brand-claims.html", "vw": 700, "vh": 150}, {"key": "spacing-scale", "group": "Structure", "name": "Spacing scale", "sub": "8px rhythm; 32px is the grid unit.", "src": "guidelines/spacing-scale.html", "vw": 700, "vh": 150}, {"key": "radius-borders", "group": "Structure", "name": "Radii & hairlines", "sub": "6px chips · 8px buttons/inputs · 12–16px cards. Hairline borders everywhere.", "src": "guidelines/radius-borders.html", "vw": 700, "vh": 150}, {"key": "grid-line", "group": "Structure", "name": "Line-grid substrate", "sub": "32px hairline coordinate grid with technical framing. Lines are neutral — never coral.", "src": "guidelines/grid-line.html", "vw": 700, "vh": 170}, {"key": "motion-pulse", "group": "Structure", "name": "Motion — pulses on the grid", "sub": "Light travels along grid lines. Slow, sparse, purposeful. Particle meshes are rejected.", "src": "guidelines/motion-pulse.html", "vw": 700, "vh": 160}, {"key": "icons-set", "group": "Icons", "name": "Icon set", "sub": "151 duotone icons across 13 categories — ink structure, coral subject.", "src": "guidelines/icons-set.html", "vw": 700, "vh": 230}, {"key": "icons-rules", "group": "Icons", "name": "Icon rules", "sub": "Two colors only · 48px floor · accent marks the subject.", "src": "guidelines/icons-rules.html", "vw": 700, "vh": 190}, {"key": "components-forms", "group": "Components", "name": "Forms", "sub": "Button, Input, Select, Checkbox, Radio, Switch", "src": "components/forms/forms.card.html", "vw": 700, "vh": 230}, {"key": "components-display", "group": "Components", "name": "Display", "sub": "Card, Tag, Stat", "src": "components/display/display.card.html", "vw": 700, "vh": 210}, {"key": "components-brand", "group": "Components", "name": "Brand", "sub": "Logo, LineGrid, GradientTile", "src": "components/brand/brand.card.html", "vw": 700, "vh": 240}, {"key": "components-navigation", "group": "Components", "name": "Navigation", "sub": "Tabs", "src": "components/navigation/navigation.card.html", "vw": 700, "vh": 130}, {"key": "components-overlay", "group": "Components", "name": "Overlay", "sub": "Dialog, Toast, Tooltip", "src": "components/overlay/overlay.card.html", "vw": 700, "vh": 260}, {"key": "components-icons", "group": "Components", "name": "Icons", "sub": "151 duotone icons · 96 grid · 3px stroke · 48px floor", "src": "components/icons/icons.card.html", "vw": 700, "vh": 300}], GROUPS=[{"name": "Colors", "blurb": "Eight colours in three tiers. Every UI tint derives from them by opacity."}, {"name": "Type", "blurb": "One typeface. Hierarchy from weight and size only."}, {"name": "Gradients", "blurb": "Six coded themes with grain, used as section backgrounds."}, {"name": "Brand", "blurb": "Logo, voice, photography and the verified claims register."}, {"name": "Structure", "blurb": "Spacing, radius, borders and the 32px line grid."}, {"name": "Icons", "blurb": "151 duotone icons on a 96 grid, never below 48px."}, {"name": "Components", "blurb": "React primitives with typed props and usage notes."}];
-var ART={Colors:'sig-grad-bloom dark',Type:'sig-grad-night',Gradients:'sig-grad-ember',Brand:'sig-grad-depth',Structure:'sig-grad-current dark',Icons:'sig-grad-glow dark',Components:'sig-grad-signal dark'};
-var KITS=[['Website kit','ui_kits/website/index.html'],['Deck Master v02','templates/deck-master-v02/DeckMasterV02.dc.html'],['Brand Guidelines v02','templates/brand-guidelines-v02/BrandGuidelinesV02.dc.html']];
-var REPO='https://github.com/gkahadane123/signal-design-system/blob/main/';
-var side=document.getElementById('side'),doc=document.getElementById('doc'),menu=document.getElementById('menu');
-function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-
-function buildSide(){
-  var h='<h4>Get started</h4><a href="#overview" data-k="overview">Overview</a>';
-  GROUPS.forEach(function(g){
-    h+='<h4>'+esc(g.name)+'</h4>';
-    PAGES.filter(function(p){return p.group===g.name}).forEach(function(p){h+='<a href="#'+p.key+'" data-k="'+p.key+'">'+esc(p.name)+'</a>'});
-  });
-  h+='<h4>Kits and templates</h4>'+KITS.map(function(k){return '<a href="'+k[1]+'"><span class="ext">'+esc(k[0])+'</span></a>'}).join('');
-  side.innerHTML=h;
-}
-
-function banner(group,title,sub,label){
-  return '<section class="banner"><div><p class="crumb">'+esc(label)+'</p><h1>'+esc(title)+'</h1><p>'+esc(sub)+'</p></div><div class="art '+ART[group]+'" aria-hidden="true"><span>'+esc(group)+'</span></div></section>';
-}
-
-function overview(){
-  var cards=GROUPS.map(function(g){
-    var first=PAGES.filter(function(p){return p.group===g.name})[0],n=PAGES.filter(function(p){return p.group===g.name}).length;
-    return '<a class="card" href="#'+first.key+'"><h3>'+esc(g.name)+' <small>'+n+(n===1?' page':' pages')+'</small></h3><p>'+esc(g.blurb)+'</p></a>';
-  }).join('');
-  return banner('Brand','Signal design system','The design system behind every Intelligence Node product, deck and page.','Get started')+
-  '<div class="overview"><div><h2>Foundations and components</h2><div class="grid">'+cards+'</div></div>'+
-  '<div><h2>Use it</h2><div class="code">/* link one stylesheet */\n&lt;link rel="stylesheet" href="styles.css"&gt;\n\n/* or import it */\n@import "signal-design-system/styles.css";</div></div></div>';
-}
-
-function page(p){
-  var h=banner(p.group,p.name,p.sub,p.group);
-  h+='<div class="stage-wrap"><div class="stage"><div class="stage-bar"><span>'+esc(p.name)+' · specimen</span><span><a href="'+p.src+'" target="_blank" rel="noopener">Open specimen ↗</a> &nbsp;·&nbsp; <a href="'+REPO+p.src+'" target="_blank" rel="noopener">Source</a></span></div>'+
-     '<iframe src="'+p.src+'" title="'+esc(p.name)+' specimen" loading="lazy" style="height:'+(p.vh+8)+'px"></iframe></div></div>';
-  return h;
-}
-
-function route(){
-  var k=(location.hash||'#overview').slice(1),p=PAGES.filter(function(x){return x.key===k})[0];
-  doc.innerHTML=p?page(p):overview();
-  document.title=(p?p.name:'Design system')+' · Signal';
-  [].forEach.call(side.querySelectorAll('a[data-k]'),function(a){
-    var on=a.getAttribute('data-k')===(p?p.key:'overview');
-    if(on)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');
-  });
-  side.classList.remove('open');menu.setAttribute('aria-expanded','false');
-  window.scrollTo(0,0);
-}
-menu.addEventListener('click',function(){var o=side.classList.toggle('open');menu.setAttribute('aria-expanded',o)});
-buildSide();addEventListener('hashchange',route);route();
-</script>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="docs.js"></script>
 </body></html>
