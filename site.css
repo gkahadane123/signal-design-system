@@ -386,3 +386,5 @@ ol.rules li::before{content:counter(r,decimal-leading-zero);position:absolute;le
 .ast .wrap{position:relative}
 
 .side section+section h4{margin-top:28px}
+@media (max-width:1250px){.banner{grid-template-columns:minmax(0,1fr) 260px;gap:40px}.banner h1{font-size:clamp(36px,4.6vw,56px)}}
+@media (max-width:900px){.banner{grid-template-columns:1fr}}
