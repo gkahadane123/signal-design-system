@@ -16,7 +16,7 @@
   --tint-ink-4:rgb(22 20 24/.04); --tint-ink-6:rgb(22 20 24/.06); --tint-ink-8:rgb(22 20 24/.08);
   --tint-ink-12:rgb(22 20 24/.12); --tint-ink-18:rgb(22 20 24/.18); --tint-ink-24:rgb(22 20 24/.24);
   --tint-ink-48:rgb(22 20 24/.48); --tint-ink-64:rgb(22 20 24/.64);
-  --tint-paper-8:rgb(242 239 233/.08); --tint-paper-16:rgb(242 239 233/.16);
+  --tint-paper-4:rgb(242 239 233/.04); --tint-paper-8:rgb(242 239 233/.08); --tint-paper-16:rgb(242 239 233/.16);
   --tint-paper-64:rgb(242 239 233/.64); --tint-paper-80:rgb(242 239 233/.8);
   --tint-coral-12:rgb(255 102 102/.12); --tint-coral-24:rgb(255 102 102/.24);
   --tint-aqua-16:rgb(61 224 200/.16); --tint-aqua-32:rgb(61 224 200/.32);
@@ -33,7 +33,7 @@
   --signal:var(--aqua);            /* live/positive signal */
   --border-hairline:var(--tint-ink-12);
   --border-strong:var(--tint-ink-24);
-  --grid-line:var(--tint-ink-8);   /* structural lines are neutral — never coral */
+  --grid-line:var(--tint-ink-4);   /* structural lines are neutral — never coral; kept faint so they sit behind content */
   --focus-ring:var(--aqua);
 }
 /* Dark mode — SECONDARY, in refinement (spec: light is primary and stable) */
@@ -45,5 +45,5 @@
   --text-subtle:rgb(242 239 233/.48);
   --border-hairline:var(--tint-paper-16);
   --border-strong:rgb(242 239 233/.32);
-  --grid-line:var(--tint-paper-8);
+  --grid-line:var(--tint-paper-4);
 }
