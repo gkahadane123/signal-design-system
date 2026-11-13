@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Signal design system</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-display,"Inter",Arial,sans-serif)}
+main{max-width:1040px;margin:0 auto;padding:56px 24px 96px}
+header img{height:36px;display:block;margin-bottom:40px}
+h1{font-weight:600;font-size:clamp(36px,6vw,64px);letter-spacing:-.025em;line-height:1.02;margin:0 0 16px}
+.lede{max-width:620px;color:var(--tint-ink-64);font-size:18px;line-height:1.5;margin:0 0 32px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:56px}
+.cta a{background:var(--surface);color:var(--ink);border:1px solid var(--tint-ink-12);border-radius:999px;padding:12px 22px;text-decoration:none;font-weight:500;font-size:15px}
+.cta a:hover{border-color:var(--ink)}
+h2{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--tint-ink-64);margin:0 0 12px}
+section{margin-bottom:36px}
+ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+li a{display:flex;flex-direction:column;gap:4px;background:var(--surface);border:1px solid var(--tint-ink-8);border-radius:16px;padding:16px 18px;text-decoration:none;color:var(--ink);height:100%;box-sizing:border-box}
+li a:hover{border-color:var(--ink)}
+li b{font-weight:600;font-size:16px}
+li span{color:var(--tint-ink-64);font-size:13px;line-height:1.4}
+footer{color:var(--tint-ink-48);font-size:13px;margin-top:48px}
+</style></head><body><main>
+<header><img src="assets/header-logo.svg" alt="Intelligence Node"></header>
+<h1>Signal design system</h1>
+<p class="lede">Tokens, components, specimens, icons, gradients, a website UI kit and deck templates for Intelligence Node.</p>
+<div class="cta"><a href="ui_kits/website/index.html">Open the website kit</a><a href="https://github.com/gkahadane123/signal-design-system">View on GitHub</a></div>
+<section><h2>Brand</h2><ul>
+<li><a href="guidelines/brand-claims.html"><b>Verified claims</b><span>Only VERIFIED Claims-Register numbers may appear externally, cited in scope.</span></a></li>
+<li><a href="guidelines/brand-logo.html"><b>Logo</b><span>Dot-density sphere — never rebuild the dots. White mark on dark/coral; never on mid-tones.</span></a></li>
+<li><a href="guidelines/brand-photography.html"><b>Photography</b><span>Real people in real retail contexts — documentary, natural light, warm grade. No stock clichés, no rendered people.</span></a></li>
+<li><a href="guidelines/brand-voice.html"><b>Voice</b><span>Confident and precise, never hype. The authority of the data.</span></a></li>
+</ul></section>
+<section><h2>Colors</h2><ul>
+<li><a href="guidelines/colors-contrast.html"><b>Verified contrast pairings</b><span>Body text is Ink. Text on coral fills is white (brand rule).</span></a></li>
+<li><a href="guidelines/colors-primary.html"><b>Primary — Coral</b><span>The brand. Fills, CTAs, accents. Display-only — never small text.</span></a></li>
+<li><a href="guidelines/colors-regular.html"><b>Regular — Neutrals</b><span>Warm neutrals, never cold white or pure black. All text is Ink.</span></a></li>
+<li><a href="guidelines/colors-secondary.html"><b>Secondary</b><span>Marketing collateral. Aqua doubles as the semantic signal color.</span></a></li>
+<li><a href="guidelines/colors-tints.html"><b>Opacity tints</b><span>All UI tints derive from the eight via opacity — no other named colors exist.</span></a></li>
+</ul></section>
+<section><h2>Gradients</h2><ul>
+<li><a href="guidelines/gradients-hues.html"><b>Extended gradient hues</b><span>Allowed ONLY inside gradients — never as swatches, UI, or text.</span></a></li>
+<li><a href="guidelines/gradients-themes.html"><b>Six coded gradients</b><span>Ember · Depth · Current · Bloom · Glow · Night — section backgrounds via .sig-grad-&lt;name&gt;.</span></a></li>
+</ul></section>
+<section><h2>Structure</h2><ul>
+<li><a href="guidelines/grid-line.html"><b>Line-grid substrate</b><span>32px hairline coordinate grid with technical framing. Lines are neutral — never coral.</span></a></li>
+<li><a href="guidelines/motion-pulse.html"><b>Motion — pulses on the grid</b><span>Light travels along grid lines. Slow, sparse, purposeful. Particle meshes are rejected.</span></a></li>
+<li><a href="guidelines/radius-borders.html"><b>Radii &amp; hairlines</b><span>6px chips · 8px buttons/inputs · 12–16px cards. Hairline borders everywhere.</span></a></li>
+<li><a href="guidelines/spacing-scale.html"><b>Spacing scale</b><span>8px rhythm; 32px is the grid unit.</span></a></li>
+</ul></section>
+<section><h2>Icons</h2><ul>
+<li><a href="guidelines/icons-rules.html"><b>Icon rules</b><span>Two colors only · 48px floor · accent marks the subject.</span></a></li>
+<li><a href="guidelines/icons-set.html"><b>Icon set</b><span>151 duotone icons across 13 categories — ink structure, coral subject.</span></a></li>
+</ul></section>
+<section><h2>Type</h2><ul>
+<li><a href="guidelines/type-display.html"><b>Display scale</b><span>NHG Display Pro 600, tracking −0.02em, from 28px up.</span></a></li>
+<li><a href="guidelines/type-family.html"><b>One typeface</b><span>Neue Haas Grotesk only — hierarchy from weight and size. Inter is the approved web stand-in.</span></a></li>
+<li><a href="guidelines/type-text.html"><b>Text &amp; data</b><span>NHG Display Pro below 28px. Tabular numerals for data. Uppercase only for tiny labels.</span></a></li>
+</ul></section>
+<section><h2>Website</h2><ul>
+<li><a href="ui_kits/website/index.html"><b>Marketing site</b><span>Home / Platform / About — interactive, spec-derived</span></a></li>
+</ul></section>
+<section><h2>Templates</h2><ul>
+<li><a href="templates/deck-master-v02/DeckMasterV02.dc.html"><b>Deck Master v02</b><span>20 sales slide layouts on the Signal grid</span></a></li>
+<li><a href="templates/brand-guidelines-v02/BrandGuidelinesV02.dc.html"><b>Brand Guidelines v02</b><span>14-slide brand guidelines deck</span></a></li>
+</ul></section>
+<footer>Neue Haas Grotesk Display Pro is licensed and not included in this repository, so specimens render with the fallback font here.</footer>
+</main></body></html>
