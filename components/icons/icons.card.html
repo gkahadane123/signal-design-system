@@ -1,0 +1,27 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Icons" subtitle="151 duotone icons · 96 grid · 3px stroke · 48px floor" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{color:var(--ink);padding:16px;box-sizing:border-box}.row{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.lbl{font:500 11px/1.2 var(--font-text);letter-spacing:.08em;text-transform:uppercase;color:var(--tint-ink-64)}</style></head><body><div id="root"></div>
+<script type="text/babel">
+function dsReady(fn, tries=0){ if (window.SignalDesignSystem_167090) fn(); else if (tries<200) setTimeout(()=>dsReady(fn,tries+1),50); }
+dsReady(() => {
+const { Icon } = window.SignalDesignSystem_167090;
+const set = ["price-tag","realtime-clock","package-scan","global-coverage","analytics-growth","shield-check","storefront","delivery-truck","dollar-growth","radar-insights","support-headset","multilingual"];
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <div style={{display:"flex",flexDirection:"column",gap:16}}>
+    <div className="row">{set.map(n => <Icon key={n} name={n} size={48} base="../../assets" title={n} />)}</div>
+    <div style={{display:"flex",gap:36,alignItems:"flex-end",flexWrap:"wrap"}}>
+      <div style={{display:"flex",flexDirection:"column",gap:8}}><span className="lbl">48 · 64 · 96</span>
+        <div className="row" style={{alignItems:"flex-end"}}><Icon name="dollar-target" size={48} base="../../assets" /><Icon name="dollar-target" size={64} base="../../assets" /><Icon name="dollar-target" size={96} base="../../assets" /></div></div>
+      <div style={{display:"flex",flexDirection:"column",gap:8}}><span className="lbl">Duotone · mono · aqua accent</span>
+        <div className="row"><Icon name="database-sync" size={56} base="../../assets" /><Icon name="database-sync" size={56} mono base="../../assets" /><Icon name="database-sync" size={56} accent="var(--aqua)" base="../../assets" /></div></div>
+      <div style={{display:"flex",flexDirection:"column",gap:8}}><span className="lbl">On Ink</span>
+        <div className="row" style={{background:"var(--ink)",borderRadius:12,padding:"10px 14px"}}><Icon name="lightning-bolt" size={56} color="#E8E9ED" base="../../assets" /><Icon name="trophy" size={56} color="#E8E9ED" base="../../assets" /></div></div>
+    </div>
+  </div>
+);
+});
+</script></body></html>

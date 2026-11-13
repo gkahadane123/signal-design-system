@@ -1,0 +1,19 @@
+/* Radii (spec §10), warm shadows, slow/sparse/purposeful motion (spec §9). */
+:root{
+  --radius-chip:6px;
+  --radius-btn:999px; /* pill — all buttons fully rounded (brand rule) */
+  --radius-input:8px;
+  --radius-card-sm:12px;
+  --radius-card:16px;
+  --shadow-card:0 1px 2px rgb(22 20 24/.04),0 8px 24px rgb(22 20 24/.06);
+  --shadow-pop:0 2px 6px rgb(22 20 24/.08),0 24px 64px rgb(22 20 24/.18);
+  --ease-out:cubic-bezier(.2,.6,.2,1); /* @kind other */
+  --ease-in-out:cubic-bezier(.45,0,.2,1); /* @kind other */
+  --dur-fast:120ms; /* @kind other */
+  --dur-base:240ms; /* @kind other */
+  --dur-slow:480ms; /* @kind other */
+  --line-grid:repeating-linear-gradient(0deg,var(--grid-line) 0 1px,transparent 1px var(--grid-unit)),repeating-linear-gradient(90deg,var(--grid-line) 0 1px,transparent 1px var(--grid-unit));
+}
+@keyframes sig-pulse-x{0%{left:-64px;opacity:0}12%{opacity:.9}88%{opacity:.9}100%{left:100%;opacity:0}}
+@keyframes sig-pulse-y{0%{top:-48px;opacity:0}12%{opacity:.9}88%{opacity:.9}100%{top:100%;opacity:0}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}

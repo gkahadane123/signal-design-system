@@ -1,0 +1,28 @@
+/* One typeface. Hierarchy from weight + size only. NHG Display Pro everywhere. */
+:root{
+  --font-display:"NHG Display Pro","Inter",-apple-system,"Helvetica Neue",sans-serif;
+  --font-text:"NHG Display Pro","Inter",-apple-system,"Helvetica Neue",sans-serif;
+  --text-display-1:clamp(44px,6vw,72px);
+  --text-display-2:clamp(34px,4vw,48px);
+  --text-heading:28px;   /* smallest Display size */
+  --text-title:21px;
+  --text-body-lg:18px;
+  --text-body:16px;
+  --text-small:14px;
+  --text-caption:12.5px;
+  --text-label:11px;
+  --tracking-display:-0.02em;
+  --tracking-label:0.08em;
+  --leading-display:1.04;
+  --leading-body:1.55;
+}
+.t-display-1{font:600 var(--text-display-1)/var(--leading-display) var(--font-display);letter-spacing:var(--tracking-display)}
+.t-display-2{font:600 var(--text-display-2)/1.08 var(--font-display);letter-spacing:var(--tracking-display)}
+.t-heading{font:600 var(--text-heading)/1.15 var(--font-display);letter-spacing:-0.01em}
+.t-title{font:600 var(--text-title)/1.25 var(--font-text)}
+.t-body-lg{font:400 var(--text-body-lg)/var(--leading-body) var(--font-text)}
+.t-body{font:400 var(--text-body)/var(--leading-body) var(--font-text)}
+.t-small{font:400 var(--text-small)/1.5 var(--font-text)}
+.t-caption{font:400 var(--text-caption)/1.45 var(--font-text);color:var(--text-muted)}
+.t-label{font:500 var(--text-label)/1.2 var(--font-text);letter-spacing:var(--tracking-label);text-transform:uppercase}
+.t-data{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}

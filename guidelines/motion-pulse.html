@@ -1,0 +1,14 @@
+<!-- @dsCard group="Structure" viewport="700x160" name="Motion — pulses on the grid" subtitle="Light travels along grid lines. Slow, sparse, purposeful. Particle meshes are rejected." -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css"><style>
+body{padding:16px;box-sizing:border-box;height:160px}
+.stage{position:relative;height:100%;background:var(--line-grid);background-color:var(--paper);border:1px solid var(--border-strong);overflow:hidden}
+.px{position:absolute;left:0;height:1px;width:56px;background:linear-gradient(90deg,transparent,var(--aqua));animation:sig-pulse-x 7s linear infinite}
+.py{position:absolute;top:0;width:1px;height:44px;background:linear-gradient(180deg,transparent,var(--coral));animation:sig-pulse-y 9s linear infinite}
+.meta{position:absolute;right:10px;bottom:8px;color:var(--tint-ink-48)}
+;.t-caption{color:var(--tint-ink-64)}</style></head><body>
+<div class="stage">
+<div class="px" style="top:32px"></div>
+<div class="px" style="top:96px;animation-delay:3.5s"></div>
+<div class="py" style="left:224px;animation-delay:1.2s"></div>
+<div class="py" style="left:480px;animation-delay:5s"></div><span class="meta t-caption t-data">ease-out ·  240ms UI · pulses 7–9s</span>
+</div></body></html>

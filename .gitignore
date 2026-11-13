@@ -1,0 +1,13 @@
+.DS_Store
+node_modules/
+# Licensed fonts must never be committed
+fonts/*
+!fonts/README.md
+*.otf
+*.ttf
+*.woff
+*.woff2
+# Internal source material
+uploads/
+notes/
+.thumbnail

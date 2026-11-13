@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Deck Master v02" description="13-slide Signal presentation master — cover, agenda, card grids, divider, stat, before/after, chart, table, quote, plan, closing." -->
+<helmet><script src="./ds-base.js"></script></helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%" data-uneditable="">
+
+<section data-label="Cover" class="sig-grad-depth" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;color:var(--paper);font-family:var(--font-text);padding:96px 128px;display:flex;flex-direction:column;justify-content:space-between">
+<img src="../../assets/header-logo-white.svg" alt="Intelligence Node" style="position:absolute;top:44px;left:44px;height:84px">
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:32px;max-width:1500px">
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(242 239 233/.72)">Presentation type · e.g. quarterly business review</span>
+<h1 style="margin:0;font:600 104px/1.04 var(--font-display);letter-spacing:-0.02em;text-wrap:balance">Deck title goes here, one clear sentence</h1>
+</div>
+<div style="display:flex;justify-content:space-between;align-items:flex-end;gap:64px;border-top:1px solid rgb(242 239 233/.24);padding-top:40px">
+<div style="display:flex;gap:96px">
+<div style="display:flex;flex-direction:column;gap:16px"><span style="font: 500 22px/1.2 var(--font-text); letter-spacing: .12em; text-transform: uppercase; color: rgb(242 239 233/.72); font-size: 16px">Presentation for</span>
+<div style="display:flex;align-items:center;gap:20px"><div style="width:180px;height:64px;border:1px dashed rgb(242 239 233/.4);border-radius:12px;display:flex;align-items:center;justify-content:center;font:400 20px/1.3 var(--font-text);color:rgb(242 239 233/.64)">client logo</div></div></div>
+<div style="display:flex;flex-direction:column;gap:16px"><span style="font: 500 22px/1.2 var(--font-text); letter-spacing: .12em; text-transform: uppercase; color: rgb(242 239 233/.72); font-size: 16px">Presented by</span>
+<div style="display:flex;flex-direction:column;gap:4px"><span style="font: 500 30px/1.3 var(--font-text); font-size: 26px">Name Surname</span><span style="font: 400 24px/1.4 var(--font-text); color: rgb(242 239 233/.8); font-size: 20px">Title, Intelligence Node · name@intelligencenode.com</span></div></div>
+</div>
+<span style="font: 400 24px/1.4 var(--font-text); color: rgb(242 239 233/.72); display: none">Month year</span>
+</div>
+</section>
+<section data-label="Partnership lock-up" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:96px 128px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:72px">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">02</span>
+<div style="display:flex;align-items:center;gap:80px">
+<img src="../../assets/header-logo.svg" alt="Intelligence Node" style="height:104px">
+<span style="font:300 84px/1 var(--font-display);color:rgb(22 20 24/.24)">×</span>
+<div style="width:380px;height:150px;border:1px dashed rgb(22 20 24/.32);border-radius:16px;display:flex;align-items:center;justify-content:center;font:400 26px/1.3 var(--font-text);color:rgb(22 20 24/.48)">client logo</div>
+</div>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Prepared in partnership · Month year</span>
+</section>
+
+<section data-label="Agenda" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;gap:64px">
+<span style="position: absolute; bottom: 44px; left: 44px; font: 400 20px/1 var(--font-text); color: rgb(22 20 24/.48); font-variant-numeric: tabular-nums; font-size: 16px">03</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<div style="display:flex;flex-direction:column;gap:12px"><h2 style="margin:0;font:600 48px/1 var(--font-display);letter-spacing:-0.015em">What we'll cover</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Agenda</span></div>
+<div style="display:flex;flex-direction:column;flex:1">
+<div style="display:flex;align-items:center;gap:40px;border-top:1px solid rgb(22 20 24/.12);padding:34px 8px"><span style="font:600 34px/1 var(--font-display);color:var(--coral);font-variant-numeric:tabular-nums;width:70px">01</span><span style="font:400 34px/1.35 var(--font-text)">Agenda item in one line</span></div>
+<div style="display:flex;align-items:center;gap:40px;border-top:1px solid rgb(22 20 24/.12);padding:34px 8px"><span style="font:600 34px/1 var(--font-display);color:var(--coral);font-variant-numeric:tabular-nums;width:70px">02</span><span style="font:400 34px/1.35 var(--font-text)">Agenda item in one line</span></div>
+<div style="display:flex;align-items:center;gap:40px;border-top:1px solid rgb(22 20 24/.12);padding:34px 8px"><span style="font:600 34px/1 var(--font-display);color:var(--coral);font-variant-numeric:tabular-nums;width:70px">03</span><span style="font:400 34px/1.35 var(--font-text)">Agenda item in one line</span></div>
+<div style="display:flex;align-items:center;gap:40px;border-top:1px solid rgb(22 20 24/.12);border-bottom:1px solid rgb(22 20 24/.12);padding:34px 8px"><span style="font:600 34px/1 var(--font-display);color:var(--coral);font-variant-numeric:tabular-nums;width:70px">04</span><span style="font:400 34px/1.35 var(--font-text);color:rgb(22 20 24/.64)">Delete or duplicate rows as needed</span></div>
+</div>
+</section>
+
+<section data-label="Card grid" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;gap:56px">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">04</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<div style="display:flex;flex-direction:column;gap:12px"><h2 style="margin:0;font:600 48px/1 var(--font-display);letter-spacing:-0.015em">Slide title states the point in one line</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Section · Topic</span></div>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:32px;flex:1">
+<div style="background:var(--surface);border:1px solid rgb(22 20 24/.12);border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:14px"><span style="font:600 32px/1.2 var(--font-display)">Card title</span><p style="margin:0;font:400 27px/1.5 var(--font-text);color:rgb(22 20 24/.64)">Two to three lines of supporting evidence. Concrete numbers over adjectives.</p></div>
+<div style="background:var(--surface);border:1px solid rgb(22 20 24/.12);border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:14px"><span style="font:600 32px/1.2 var(--font-display)">Card title</span><p style="margin:0;font:400 27px/1.5 var(--font-text);color:rgb(22 20 24/.64)">Two to three lines of supporting evidence. Keep parallel structure across cards.</p></div>
+<div style="background:var(--surface);border:1px solid rgb(22 20 24/.12);border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:14px"><span style="font:600 32px/1.2 var(--font-display)">Card title</span><p style="margin:0;font:400 27px/1.5 var(--font-text);color:rgb(22 20 24/.64)">Delete cards you don't need — two or four both work on this grid.</p></div>
+<div style="background:var(--surface);border:1px solid rgb(22 20 24/.12);border-radius:24px;padding:40px;display:flex;flex-direction:column;gap:14px"><span style="font:600 32px/1.2 var(--font-display)">Card title</span><p style="margin:0;font:400 27px/1.5 var(--font-text);color:rgb(22 20 24/.64)">Max ~15 words per card. If it needs more, it's a separate slide.</p></div>
+</div>
+</section>
+
+<section data-label="Divider" class="sig-grad-night" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;color:var(--paper);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;justify-content:center;gap:28px">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(242 239 233/.64);font-variant-numeric:tabular-nums">05</span>
+<img src="../../assets/monogram-white.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(242 239 233/.72)">Act 2</span>
+<h2 style="margin:0;font:600 104px/1.05 var(--font-display);letter-spacing:-0.02em;max-width:1500px;text-wrap:balance">Section statement in one clear line</h2>
+</section>
+
+<section data-label="Statement" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;justify-content:center;gap:44px">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">06</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<h2 style="margin:0;font:600 84px/1.08 var(--font-display);letter-spacing:-0.02em;max-width:1580px;text-wrap:balance">One clear statement carries this slide — say it plainly.</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Section · Statement</span>
+<span style="width:96px;height:10px;border-radius:999px;background:var(--coral)"></span>
+</section>
+
+<section data-label="Statement + detail" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:grid;grid-template-columns:1.15fr .85fr;gap:88px;align-items:center">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">07</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<div style="display:flex;flex-direction:column;gap:36px">
+<h2 style="margin:0;font:600 84px/1.08 var(--font-display);letter-spacing:-0.02em;text-wrap:balance">A large statement on the left sets the argument</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Section · Topic</span>
+</div>
+<div style="border-left:1px solid rgb(22 20 24/.12);padding-left:64px;display:flex;flex-direction:column;gap:28px">
+<p style="margin:0;font:400 30px/1.6 var(--font-text);color:rgb(22 20 24/.64)">The detail column carries the evidence: two to four sentences of support, with concrete numbers over adjectives. Keep it scannable.</p>
+<span style="font:500 28px/1.4 var(--font-text)">End on the implication for the client.</span>
+</div>
+</section>
+
+<section data-label="Big stat" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:24px;text-align:center">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">08</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Context kicker · optional</span>
+<span style="font:600 320px/1 var(--font-display);letter-spacing:-0.03em;font-variant-numeric:tabular-nums">99%</span>
+<p style="margin:0;font:400 34px/1.5 var(--font-text);color:rgb(22 20 24/.64);max-width:1100px">product match accuracy across 1B+ SKUs — the unit line explains the number</p>
+</section>
+
+<section data-label="Key stats" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;gap:72px">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">09</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<div style="display:flex;flex-direction:column;gap:12px"><h2 style="margin:0;font:600 48px/1 var(--font-display);letter-spacing:-0.015em">Three numbers that matter</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Section · Evidence</span></div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;flex:1;align-content:start">
+<div style="border-top:1px solid rgb(22 20 24/.12);padding-top:32px;display:flex;flex-direction:column;gap:18px"><span style="font:600 28px/1 var(--font-display);color:var(--coral);font-variant-numeric:tabular-nums">01</span><span style="font:600 128px/1 var(--font-display);letter-spacing:-0.03em;font-variant-numeric:tabular-nums">99%</span><span style="font:400 30px/1.4 var(--font-text)">match accuracy, similar and identical</span><span style="font:400 24px/1.4 var(--font-text);color:rgb(22 20 24/.48)">exact-match false positives only</span></div>
+<div style="border-top:1px solid rgb(22 20 24/.12);padding-top:32px;display:flex;flex-direction:column;gap:18px"><span style="font:600 28px/1 var(--font-display);color:var(--coral);font-variant-numeric:tabular-nums">02</span><span style="font:600 128px/1 var(--font-display);letter-spacing:-0.03em;font-variant-numeric:tabular-nums">1B+</span><span style="font:400 30px/1.4 var(--font-text)">products monitored in near real-time</span><span style="font:400 24px/1.4 var(--font-text);color:rgb(22 20 24/.48)">unit line explains the number</span></div>
+<div style="border-top:1px solid rgb(22 20 24/.12);padding-top:32px;display:flex;flex-direction:column;gap:18px"><span style="font:600 28px/1 var(--font-display);color:var(--coral);font-variant-numeric:tabular-nums">03</span><span style="font:600 128px/1 var(--font-display);letter-spacing:-0.03em;font-variant-numeric:tabular-nums">34</span><span style="font:400 30px/1.4 var(--font-text)">markets, 100+ languages</span><span style="font:400 24px/1.4 var(--font-text);color:rgb(22 20 24/.48)">delete a column if you have two</span></div>
+</div>
+</section>
+
+<section data-label="Content + media" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;gap:56px">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">10</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<div style="display:flex;flex-direction:column;gap:12px"><h2 style="margin:0;font:600 48px/1 var(--font-display);letter-spacing:-0.015em">Slide title states the point</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Section · Topic</span></div>
+<div style="display:grid;grid-template-columns:1fr 1.1fr;gap:56px;flex:1;align-items:stretch">
+<div style="display:flex;flex-direction:column;gap:8px">
+<div style="display:flex;gap:24px;border-top:1px solid rgb(22 20 24/.12);padding:30px 4px"><span style="width:14px;height:14px;border-radius:50%;background:var(--coral);flex:none;margin-top:12px"></span><p style="margin:0;font:400 30px/1.5 var(--font-text)">First supporting point, one to two lines.</p></div>
+<div style="display:flex;gap:24px;border-top:1px solid rgb(22 20 24/.12);padding:30px 4px"><span style="width:14px;height:14px;border-radius:50%;background:var(--coral);flex:none;margin-top:12px"></span><p style="margin:0;font:400 30px/1.5 var(--font-text)">Second supporting point with a number.</p></div>
+<div style="display:flex;gap:24px;border-top:1px solid rgb(22 20 24/.12);padding:30px 4px"><span style="width:14px;height:14px;border-radius:50%;background:var(--coral);flex:none;margin-top:12px"></span><p style="margin:0;font:400 30px/1.5 var(--font-text)">Third point — three bullets maximum.</p></div>
+</div>
+<div style="border-radius:24px;border:2px dashed rgb(22 20 24/.24);background:rgb(22 20 24/.04);display:flex;align-items:center;justify-content:center"><span style="font:400 28px/1.5 var(--font-text);color:rgb(22 20 24/.48)">product screenshot / photo</span></div>
+</div>
+</section>
+
+<section data-label="Split · image right" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);display:grid;grid-template-columns:1fr 1fr">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">11</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px;z-index:2">
+<div style="padding:64px 84px 96px 137px;display:flex;flex-direction:column;justify-content:center;gap:36px">
+<h2 style="margin:0;font:600 48px/1 var(--font-display);letter-spacing:-0.015em;text-wrap:balance">Slide title states the point</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Section · Topic</span>
+<p style="margin:0;font:400 30px/1.55 var(--font-text);color:rgb(22 20 24/.64)">Two to four lines of supporting copy sit here. Concrete numbers over adjectives — the image carries the other half of the argument.</p>
+<div style="display:flex;align-items:center;gap:20px"><span style="width:64px;height:8px;border-radius:999px;background:var(--coral)"></span><span style="font:500 28px/1.4 var(--font-text)">One takeaway line, stated plainly.</span></div>
+</div>
+<div style="border-left:1px solid rgb(22 20 24/.12);background:rgb(22 20 24/.04);display:flex;align-items:center;justify-content:center"><span style="font:400 28px/1.5 var(--font-text);color:rgb(22 20 24/.48)">photo / product screenshot — fills this half edge-to-edge</span></div>
+</section>
+
+<section data-label="Split · image left" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);display:grid;grid-template-columns:1fr 1fr">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">12</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px;z-index:2">
+<div style="border-right:1px solid rgb(22 20 24/.12);background:rgb(22 20 24/.04);display:flex;align-items:center;justify-content:center"><span style="font:400 28px/1.5 var(--font-text);color:rgb(22 20 24/.48)">photo / product screenshot — fills this half edge-to-edge</span></div>
+<div style="padding:44px 128px 96px 84px;display:flex;flex-direction:column;justify-content:center;gap:36px">
+<h2 style="margin:0;font:600 48px/1 var(--font-display);letter-spacing:-0.015em;text-wrap:balance">Slide title states the point</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Section · Topic</span>
+<div style="display:flex;flex-direction:column">
+<div style="display:flex;gap:24px;border-top:1px solid rgb(22 20 24/.12);padding:26px 4px"><span style="width:14px;height:14px;border-radius:50%;background:var(--coral);flex:none;margin-top:12px"></span><p style="margin:0;font:400 29px/1.5 var(--font-text)">First supporting point, one to two lines.</p></div>
+<div style="display:flex;gap:24px;border-top:1px solid rgb(22 20 24/.12);padding:26px 4px"><span style="width:14px;height:14px;border-radius:50%;background:var(--coral);flex:none;margin-top:12px"></span><p style="margin:0;font:400 29px/1.5 var(--font-text)">Second supporting point with a number.</p></div>
+<div style="display:flex;gap:24px;border-top:1px solid rgb(22 20 24/.12);padding:26px 4px"><span style="width:14px;height:14px;border-radius:50%;background:var(--coral);flex:none;margin-top:12px"></span><p style="margin:0;font:400 29px/1.5 var(--font-text)">Third point — three bullets maximum.</p></div>
+</div>
+</div>
+</section>
+
+<section data-label="Before / after" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;gap:56px">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">13</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<div style="display:flex;flex-direction:column;gap:12px"><h2 style="margin:0;font:600 48px/1 var(--font-display);letter-spacing:-0.015em">Before and after, side by side</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Section · Topic</span></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;flex:1">
+<div style="background:var(--surface);border:1px solid rgb(22 20 24/.12);border-radius:24px;padding:44px;display:flex;flex-direction:column;gap:26px"><span style="font:500 24px/1.2 var(--font-text);letter-spacing:.12em;text-transform:uppercase;color:rgb(22 20 24/.64)">Today</span>
+<p style="margin:0;font:400 29px/1.5 var(--font-text);color:rgb(22 20 24/.64)">Manual price checks, weekly at best.</p>
+<p style="margin:0;font:400 29px/1.5 var(--font-text);color:rgb(22 20 24/.64)">Matching by SKU lookup and guesswork.</p>
+<p style="margin:0;font:400 29px/1.5 var(--font-text);color:rgb(22 20 24/.64)">Decisions lag the market by days.</p></div>
+<div style="background:var(--ink);border-radius:24px;padding:44px;display:flex;flex-direction:column;gap:26px;color:var(--paper)"><span style="display:inline-flex;align-items:center;gap:12px;font:500 24px/1.2 var(--font-text);letter-spacing:.12em;text-transform:uppercase;color:rgb(242 239 233/.72)"><span style="width:12px;height:12px;border-radius:50%;background:var(--aqua)"></span>With Intelligence Node</span>
+<p style="margin:0;font:400 29px/1.5 var(--font-text)">Near real-time monitoring across 1B+ products.</p>
+<p style="margin:0;font:400 29px/1.5 var(--font-text)">99% match accuracy, similar and identical.</p>
+<p style="margin:0;font:400 29px/1.5 var(--font-text)">Recommendations delivered, not just data.</p></div>
+</div>
+</section>
+
+<section data-label="Chart" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;gap:48px">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">14</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<div style="display:flex;flex-direction:column;gap:12px"><h2 style="margin:0;font:600 48px/1 var(--font-display);letter-spacing:-0.015em">Electronics gap widened to 9.8%</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Section · Topic</span>
+<p style="margin:0;font:400 28px/1.5 var(--font-text);color:rgb(22 20 24/.64)">Price gap vs. leading competitor, by category</p></div>
+<div style="flex:1;display:flex;align-items:flex-end;gap:72px;border-bottom:1px solid rgb(22 20 24/.24);padding:0 24px">
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:flex-end;height:100%"><span style="font:400 26px/1 var(--font-text);color:rgb(22 20 24/.64);font-variant-numeric:tabular-nums">4.2%</span><div style="width:100%;height:32%;background:var(--ink);border-radius:10px 10px 0 0"></div></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:flex-end;height:100%"><span style="font:400 26px/1 var(--font-text);color:rgb(22 20 24/.64);font-variant-numeric:tabular-nums">5.6%</span><div style="width:100%;height:44%;background:rgb(22 20 24/.24);border-radius:10px 10px 0 0"></div></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:flex-end;height:100%"><span style="font:400 26px/1 var(--font-text);color:rgb(22 20 24/.64);font-variant-numeric:tabular-nums">3.1%</span><div style="width:100%;height:24%;background:rgb(22 20 24/.24);border-radius:10px 10px 0 0"></div></div>
+<div style="flex:1;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:flex-end;height:100%"><span style="font:600 30px/1 var(--font-text);font-variant-numeric:tabular-nums">9.8%</span><div style="width:100%;height:78%;background:var(--coral);border-radius:10px 10px 0 0"></div></div>
+</div>
+<div style="display:flex;gap:72px;padding:0 24px"><span style="flex:1;text-align:center;font:400 26px/1 var(--font-text);color:rgb(22 20 24/.64)">Grocery</span><span style="flex:1;text-align:center;font:400 26px/1 var(--font-text);color:rgb(22 20 24/.64)">Apparel</span><span style="flex:1;text-align:center;font:400 26px/1 var(--font-text);color:rgb(22 20 24/.64)">Home</span><span style="flex:1;text-align:center;font:600 26px/1 var(--font-text)">Electronics</span></div>
+<span style="font:400 24px/1.4 var(--font-text);color:rgb(22 20 24/.48)">Source: Intelligence Node platform data, Q2 2026</span>
+</section>
+
+<section data-label="Comparison table" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;gap:56px">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">15</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<div style="display:flex;flex-direction:column;gap:12px"><h2 style="margin:0;font:600 48px/1 var(--font-display);letter-spacing:-0.015em">Comparison table with one highlight</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Section · Topic</span></div>
+<div style="flex:1;display:grid;grid-template-columns:1.2fr 1fr 1fr 1.2fr;font:400 28px/1.4 var(--font-text)">
+<div style="border-bottom:1px solid rgb(22 20 24/.24);padding:26px 24px;font:500 24px/1.2 var(--font-text);letter-spacing:.12em;text-transform:uppercase;color:rgb(22 20 24/.64)">Capability</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.24);padding:26px 24px;font:500 24px/1.2 var(--font-text);letter-spacing:.12em;text-transform:uppercase;color:rgb(22 20 24/.64)">Status quo</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.24);padding:26px 24px;font:500 24px/1.2 var(--font-text);letter-spacing:.12em;text-transform:uppercase;color:rgb(22 20 24/.64)">Competitor</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.24);padding:26px 24px;font:500 24px/1.2 var(--font-text);letter-spacing:.12em;text-transform:uppercase;background:var(--coral);color:#FFFFFF;border-radius:16px 16px 0 0">Intelligence Node</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.12);padding:26px 24px;font-weight:500">Match accuracy</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.12);padding:26px 24px;color:rgb(22 20 24/.64)">—</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.12);padding:26px 24px;color:rgb(22 20 24/.64)">~85%</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.12);padding:26px 24px;background:rgb(255 102 102/.12);font-weight:500">99%</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.12);padding:26px 24px;font-weight:500">Refresh rate</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.12);padding:26px 24px;color:rgb(22 20 24/.64)">Weekly</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.12);padding:26px 24px;color:rgb(22 20 24/.64)">Daily</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.12);padding:26px 24px;background:rgb(255 102 102/.12);font-weight:500">Near real-time</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.12);padding:26px 24px;font-weight:500">Coverage</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.12);padding:26px 24px;color:rgb(22 20 24/.64)">Own catalog</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.12);padding:26px 24px;color:rgb(22 20 24/.64)">Top 100 SKUs</div>
+<div style="border-bottom:1px solid rgb(22 20 24/.12);padding:26px 24px;background:rgb(255 102 102/.12);font-weight:500">1B+ products</div>
+<div style="padding:26px 24px;font-weight:500">Output</div>
+<div style="padding:26px 24px;color:rgb(22 20 24/.64)">Spreadsheets</div>
+<div style="padding:26px 24px;color:rgb(22 20 24/.64)">Dashboards</div>
+<div style="padding:26px 24px;background:rgb(255 102 102/.12);font-weight:500;border-radius:0 0 16px 16px">Recommendations</div>
+</div>
+</section>
+
+<section data-label="Quote" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;justify-content:center;gap:48px">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">16</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Client voice</span>
+<p style="margin:0;font:600 72px/1.2 var(--font-display);letter-spacing:-0.015em;max-width:1560px;text-wrap:balance">"Replace with a real client quote — one sentence, with a number in it if you can get one."</p>
+<div style="display:flex;align-items:center;gap:20px"><span style="width:64px;height:8px;border-radius:999px;background:var(--coral)"></span><span style="font:400 30px/1.4 var(--font-text)"><strong style="font-weight:600">Name Surname</strong> · Role, Company</span></div>
+</section>
+
+<section data-label="Plan" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;gap:64px">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">17</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<div style="display:flex;flex-direction:column;gap:12px"><h2 style="margin:0;font:600 48px/1 var(--font-display);letter-spacing:-0.015em">Rollout in four steps</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Section · Plan</span></div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px;flex:1;align-content:start">
+<div style="border-top:1px solid rgb(22 20 24/.12);padding-top:28px;display:flex;flex-direction:column;gap:16px"><span style="width:56px;height:56px;border-radius:50%;border:1px solid rgb(22 20 24/.24);display:flex;align-items:center;justify-content:center;font:600 28px/1 var(--font-display)">1</span><span style="font:600 30px/1.25 var(--font-display)">Step title</span><p style="margin:0;font:400 26px/1.5 var(--font-text);color:rgb(22 20 24/.64)">One line on scope and timing. Weeks 1–2.</p></div>
+<div style="border-top:1px solid rgb(22 20 24/.12);padding-top:28px;display:flex;flex-direction:column;gap:16px"><span style="width:56px;height:56px;border-radius:50%;background:var(--coral);color:#FFFFFF;display:flex;align-items:center;justify-content:center;font:600 28px/1 var(--font-display)">2</span><span style="font:600 30px/1.25 var(--font-display)">Step title</span><p style="margin:0;font:400 26px/1.5 var(--font-text);color:rgb(22 20 24/.64)">Coral marks the step being discussed.</p></div>
+<div style="border-top:1px solid rgb(22 20 24/.12);padding-top:28px;display:flex;flex-direction:column;gap:16px"><span style="width:56px;height:56px;border-radius:50%;border:1px solid rgb(22 20 24/.24);display:flex;align-items:center;justify-content:center;font:600 28px/1 var(--font-display)">3</span><span style="font:600 30px/1.25 var(--font-display)">Step title</span><p style="margin:0;font:400 26px/1.5 var(--font-text);color:rgb(22 20 24/.64)">One line on scope and timing.</p></div>
+<div style="border-top:1px solid rgb(22 20 24/.12);padding-top:28px;display:flex;flex-direction:column;gap:16px"><span style="width:56px;height:56px;border-radius:50%;border:1px solid rgb(22 20 24/.24);display:flex;align-items:center;justify-content:center;font:600 28px/1 var(--font-display)">4</span><span style="font:600 30px/1.25 var(--font-display)">Step title</span><p style="margin:0;font:400 26px/1.5 var(--font-text);color:rgb(22 20 24/.64)">One line on scope and timing.</p></div>
+</div>
+</section>
+
+<section data-label="Pillars" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;gap:56px">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">18</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<div style="display:flex;flex-direction:column;gap:12px"><h2 style="margin:0;font:600 48px/1 var(--font-display);letter-spacing:-0.015em">Three pillars, parallel structure</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Section · Topic</span></div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;flex:1">
+<div style="background:var(--surface);border:1px solid rgb(22 20 24/.12);border-radius:24px;padding:44px;display:flex;flex-direction:column;gap:16px"><span style="font:400 24px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">01</span><span style="font:600 34px/1.2 var(--font-display)">Pillar one</span><p style="margin:0;font:400 27px/1.5 var(--font-text);color:rgb(22 20 24/.64)">Two to three lines. Start each card with the same part of speech.</p></div>
+<div style="background:var(--surface);border:1px solid rgb(22 20 24/.12);border-radius:24px;padding:44px;display:flex;flex-direction:column;gap:16px"><span style="font:400 24px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">02</span><span style="font:600 34px/1.2 var(--font-display)">Pillar two</span><p style="margin:0;font:400 27px/1.5 var(--font-text);color:rgb(22 20 24/.64)">Two to three lines. Numbers beat adjectives.</p></div>
+<div style="background:var(--surface);border:1px solid rgb(22 20 24/.12);border-radius:24px;padding:44px;display:flex;flex-direction:column;gap:16px"><span style="font:400 24px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">03</span><span style="font:600 34px/1.2 var(--font-display)">Pillar three</span><p style="margin:0;font:400 27px/1.5 var(--font-text);color:rgb(22 20 24/.64)">Two to three lines. Keep card heights visually even.</p></div>
+</div>
+</section>
+
+<section data-label="Team" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;background:var(--paper);color:var(--ink);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;gap:64px">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(22 20 24/.48);font-variant-numeric:tabular-nums">19</span>
+<img src="../../assets/monogram.svg" alt="" style="position:absolute;top:44px;left:44px;height:48px">
+<div style="display:flex;flex-direction:column;gap:12px"><h2 style="margin:0;font:600 48px/1 var(--font-display);letter-spacing:-0.015em">Who you'll work with</h2>
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(22 20 24/.64)">Your team</span></div>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:28px;flex:1">
+<div style="background:var(--surface);border:1px solid rgb(22 20 24/.12);border-radius:24px;overflow:hidden;display:flex;flex-direction:column"><div style="flex:1;min-height:0;background:rgb(22 20 24/.04);border-bottom:1px solid rgb(22 20 24/.12);display:flex;align-items:center;justify-content:center;font:400 22px/1.3 var(--font-text);color:rgb(22 20 24/.48)">portrait</div><div style="padding:26px;display:flex;flex-direction:column;gap:6px"><span style="font:600 28px/1.25 var(--font-display)">Name Surname</span><span style="font:400 22px/1.4 var(--font-text);color:rgb(22 20 24/.64)">Role · location</span></div></div>
+<div style="background:var(--surface);border:1px solid rgb(22 20 24/.12);border-radius:24px;overflow:hidden;display:flex;flex-direction:column"><div style="flex:1;min-height:0;background:rgb(22 20 24/.04);border-bottom:1px solid rgb(22 20 24/.12);display:flex;align-items:center;justify-content:center;font:400 22px/1.3 var(--font-text);color:rgb(22 20 24/.48)">portrait</div><div style="padding:26px;display:flex;flex-direction:column;gap:6px"><span style="font:600 28px/1.25 var(--font-display)">Name Surname</span><span style="font:400 22px/1.4 var(--font-text);color:rgb(22 20 24/.64)">Role · location</span></div></div>
+<div style="background:var(--surface);border:1px solid rgb(22 20 24/.12);border-radius:24px;overflow:hidden;display:flex;flex-direction:column"><div style="flex:1;min-height:0;background:rgb(22 20 24/.04);border-bottom:1px solid rgb(22 20 24/.12);display:flex;align-items:center;justify-content:center;font:400 22px/1.3 var(--font-text);color:rgb(22 20 24/.48)">portrait</div><div style="padding:26px;display:flex;flex-direction:column;gap:6px"><span style="font:600 28px/1.25 var(--font-display)">Name Surname</span><span style="font:400 22px/1.4 var(--font-text);color:rgb(22 20 24/.64)">Role · location</span></div></div>
+<div style="background:var(--surface);border:1px solid rgb(22 20 24/.12);border-radius:24px;overflow:hidden;display:flex;flex-direction:column"><div style="flex:1;min-height:0;background:rgb(22 20 24/.04);border-bottom:1px solid rgb(22 20 24/.12);display:flex;align-items:center;justify-content:center;font:400 22px/1.3 var(--font-text);color:rgb(22 20 24/.48)">portrait</div><div style="padding:26px;display:flex;flex-direction:column;gap:6px"><span style="font:600 28px/1.25 var(--font-display)">Name Surname</span><span style="font:400 22px/1.4 var(--font-text);color:rgb(22 20 24/.64)">Role · location</span></div></div>
+</div>
+</section>
+
+<section data-label="Closing" class="sig-grad-night" style="width:1920px;height:1080px;box-sizing:border-box;position:relative;overflow:hidden;color:var(--paper);font-family:var(--font-text);padding:44px 128px 96px;display:flex;flex-direction:column;justify-content:space-between">
+<span style="position:absolute;bottom:44px;left:44px;font:400 20px/1 var(--font-text);color:rgb(242 239 233/.64);font-variant-numeric:tabular-nums">20</span>
+<img src="../../assets/header-logo-white.svg" alt="Intelligence Node" style="position:absolute;top:44px;left:44px;height:84px">
+<div style="flex:1;display:flex;flex-direction:column;justify-content:center;gap:36px;max-width:1460px">
+<span style="font:400 28px/1.3 var(--font-text);color:rgb(242 239 233/.72)">Next step</span>
+<h2 style="margin:0;font:600 104px/1.05 var(--font-display);letter-spacing:-0.02em;text-wrap:balance">See your category's price position in 30 minutes.</h2>
+</div>
+<span style="font:400 28px/1.4 var(--font-text);color:rgb(242 239 233/.8)">intelligencenode.com · sales@intelligencenode.com</span>
+</section>
+
+</x-import>
+</x-dc>
+</body>
+</html>

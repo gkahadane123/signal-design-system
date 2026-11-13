@@ -1,0 +1,23 @@
+<!-- @dsCard group="Components" viewport="700x210" name="Display" subtitle="Card, Tag, Stat" -->
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<style>body{padding:16px;box-sizing:border-box}</style></head><body><div id="root"></div>
+<script type="text/babel">
+function dsReady(fn, tries=0){ if (window.SignalDesignSystem_167090) fn(); else if (tries<200) setTimeout(()=>dsReady(fn,tries+1),50); }
+dsReady(() => {
+const { Card, Tag, Stat } = window.SignalDesignSystem_167090;
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <div style={{display:"grid",gridTemplateColumns:"1.2fr 1fr 1fr",gap:12,alignItems:"stretch"}}>
+    <Card padding={18}>
+      <div style={{display:"flex",gap:6,marginBottom:10,flexWrap:"wrap"}}><Tag tone="signal" withDot>Live</Tag><Tag>Assortment</Tag><Tag tone="coral">Pricing</Tag><Tag tone="outline">Digital shelf</Tag></div>
+      <p className="t-small" style={{color:"var(--text-muted)"}}>Surface card · hairline border · warm shadow · 16px radius</p>
+    </Card>
+    <Card variant="dark" padding={18}><Stat onDark value="+4,700%" size="sm" label="Gen-AI retail traffic, YoY" source="Adobe Analytics, July 2025" /></Card>
+    <Card variant="paper" padding={18}><Stat value="190,000+" size="sm" label="brands tracked" source="34 markets · 100+ languages" /></Card>
+  </div>
+);
+});
+</script></body></html>

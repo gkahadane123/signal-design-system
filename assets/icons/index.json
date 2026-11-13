@@ -1,0 +1,1080 @@
+{
+ "count": 151,
+ "grid": 96,
+ "stroke": 3,
+ "minSize": 48,
+ "categories": {
+  "Actions & Navigation": 12,
+  "Analytics": 17,
+  "Commerce & Retail": 25,
+  "Data": 9,
+  "Developer": 3,
+  "Devices": 5,
+  "Finance": 13,
+  "Logistics": 12,
+  "Media & Files": 10,
+  "People & Support": 11,
+  "Shapes & Layout": 9,
+  "Status & Markers": 19,
+  "Time": 6
+ },
+ "icons": [
+  {
+   "slug": "arrows-exchange",
+   "cat": "Actions & Navigation",
+   "tags": "arrows up down exchange return swap navigation",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "arrows-throughput",
+   "cat": "Actions & Navigation",
+   "tags": "arrows right throughput speed parallel navigation",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "browser-search",
+   "cat": "Actions & Navigation",
+   "tags": "browser search window magnifier web query search",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "checklist",
+   "cat": "Actions & Navigation",
+   "tags": "checklist list tasks options radio select tasks",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "click-action",
+   "cat": "Actions & Navigation",
+   "tags": "click cursor pointer tap select mouse interaction",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "clipboard-audit",
+   "cat": "Actions & Navigation",
+   "tags": "clipboard audit check search verify list tasks",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "compass-dial",
+   "cat": "Actions & Navigation",
+   "tags": "compass dial direction navigate gauge navigation",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "plus-circle",
+   "cat": "Actions & Navigation",
+   "tags": "plus add new create circle actions",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "refresh-circle",
+   "cat": "Actions & Navigation",
+   "tags": "refresh reload circle sync rotate actions",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "refresh-cycle",
+   "cat": "Actions & Navigation",
+   "tags": "refresh reload cycle sync rotate arrows actions",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "search-list",
+   "cat": "Actions & Navigation",
+   "tags": "search list magnifier find results query search",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "tools",
+   "cat": "Actions & Navigation",
+   "tags": "tools wrench screwdriver repair fix settings maintenance",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "analytics-growth",
+   "cat": "Analytics",
+   "tags": "chart bars growth magnifier analyse trend analytics",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "arrow-swoosh-up",
+   "cat": "Analytics",
+   "tags": "arrow swoosh up growth curve rise analytics",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "bars-search",
+   "cat": "Analytics",
+   "tags": "bars search magnifier chart analyse analytics",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "candlestick-chart",
+   "cat": "Analytics",
+   "tags": "candlestick chart stock price range analytics",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "chart-approval",
+   "cat": "Analytics",
+   "tags": "chart thumbs up approve positive rating analytics",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "chart-arrow-up",
+   "cat": "Analytics",
+   "tags": "chart arrow up growth increase trend analytics",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "chart-person",
+   "cat": "Analytics",
+   "tags": "chart person user analytics audience analytics",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "dashboard-settings",
+   "cat": "Analytics",
+   "tags": "dashboard report chart gear configure custom analytics",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "growth-arrow",
+   "cat": "Analytics",
+   "tags": "growth arrow zigzag increase up trend analytics",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "growth-arrow-bold",
+   "cat": "Analytics",
+   "tags": "growth arrow zigzag increase up trend analytics",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "growth-circle",
+   "cat": "Analytics",
+   "tags": "growth arrow circle trend increase analytics",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "presentation-chart",
+   "cat": "Analytics",
+   "tags": "presentation chart board slide report analytics",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "radar-insights",
+   "cat": "Analytics",
+   "tags": "radar target insights detect discovery scan insights",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "radar-target",
+   "cat": "Analytics",
+   "tags": "radar target spiral scan detect insights insights",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "report-award",
+   "cat": "Analytics",
+   "tags": "report award chart rosette certified analytics",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "stairs-chart",
+   "cat": "Analytics",
+   "tags": "stairs steps chart progress tier analytics",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "star",
+   "cat": "Analytics",
+   "tags": "star rating favourite review quality rating",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "armchair",
+   "cat": "Commerce & Retail",
+   "tags": "armchair sofa chair furniture seat furniture",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "bag-compare",
+   "cat": "Commerce & Retail",
+   "tags": "bags compare size price retail commerce",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "balloon-lantern",
+   "cat": "Commerce & Retail",
+   "tags": "balloon lantern decor party retail",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "barcode-scan",
+   "cat": "Commerce & Retail",
+   "tags": "barcode scan sku product label retail",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "bottles-cheers",
+   "cat": "Commerce & Retail",
+   "tags": "bottles drinks cheers beverage alcohol beverage",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "cart-packages",
+   "cat": "Commerce & Retail",
+   "tags": "cart packages boxes shopping order commerce",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "clothes-hanger",
+   "cat": "Commerce & Retail",
+   "tags": "hanger clothes apparel fashion garment apparel",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "discount-badge",
+   "cat": "Commerce & Retail",
+   "tags": "discount percent badge offer sale rosette commerce",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "dollar-target",
+   "cat": "Commerce & Retail",
+   "tags": "dollar target price crosshair goal money commerce",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "donut",
+   "cat": "Commerce & Retail",
+   "tags": "donut doughnut food bakery sweet food",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "gift-box",
+   "cat": "Commerce & Retail",
+   "tags": "gift box present ribbon offer commerce",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "price-tag",
+   "cat": "Commerce & Retail",
+   "tags": "price tag label retail sale commerce",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "shopping-bag",
+   "cat": "Commerce & Retail",
+   "tags": "bag shopping retail purchase commerce",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "shopping-bag-handle",
+   "cat": "Commerce & Retail",
+   "tags": "bag shopping retail handle purchase commerce",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "shopping-cart",
+   "cat": "Commerce & Retail",
+   "tags": "cart shopping basket trolley buy commerce",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "shopping-cart-bold",
+   "cat": "Commerce & Retail",
+   "tags": "cart shopping basket trolley buy commerce",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "storefront",
+   "cat": "Commerce & Retail",
+   "tags": "store shop storefront awning market retail",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "storefront-outline",
+   "cat": "Commerce & Retail",
+   "tags": "store shop storefront awning market retail",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "t-shirt",
+   "cat": "Commerce & Retail",
+   "tags": "tshirt shirt apparel clothing garment apparel",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "tag-arrow",
+   "cat": "Commerce & Retail",
+   "tags": "tag arrow price direction label commerce",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "tag-bag-compare",
+   "cat": "Commerce & Retail",
+   "tags": "tag bag compare price retail commerce",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "tag-compare",
+   "cat": "Commerce & Retail",
+   "tags": "tags compare price difference two commerce",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "tag-plain",
+   "cat": "Commerce & Retail",
+   "tags": "tag label price plain retail commerce",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "tag-price-up",
+   "cat": "Commerce & Retail",
+   "tags": "tag price increase up arrow raise commerce",
+   "parametric": false,
+   "minStroke": 4.5
+  },
+  {
+   "slug": "trousers",
+   "cat": "Commerce & Retail",
+   "tags": "trousers pants apparel clothing garment apparel",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "database-grey",
+   "cat": "Data",
+   "tags": "database cylinder stack storage disk data",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "database-nodes",
+   "cat": "Data",
+   "tags": "database nodes distributed cluster storage data",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "database-stack",
+   "cat": "Data",
+   "tags": "database cylinder stack storage disk data",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "database-sync",
+   "cat": "Data",
+   "tags": "database server sync refresh storage stack data",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "database-transfer",
+   "cat": "Data",
+   "tags": "database transfer arrows up down sync data",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "global-coverage",
+   "cat": "Data",
+   "tags": "globe world global coverage international matrix coverage",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "hexagon-nodes",
+   "cat": "Data",
+   "tags": "hexagon nodes network structure mesh structure",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "hierarchy-tree",
+   "cat": "Data",
+   "tags": "hierarchy tree nodes taxonomy structure structure",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "molecule-network",
+   "cat": "Data",
+   "tags": "molecule network nodes connections graph structure",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "api-braces",
+   "cat": "Developer",
+   "tags": "api braces code developer integration json developer",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "code-gear-cycle",
+   "cat": "Developer",
+   "tags": "code gear cycle devops build automate developer",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "code-window",
+   "cat": "Developer",
+   "tags": "code browser window developer terminal developer",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "keyboard",
+   "cat": "Devices",
+   "tags": "keyboard typing input device keys devices",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "laptop",
+   "cat": "Devices",
+   "tags": "laptop computer notebook screen device devices",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "laptop-dot",
+   "cat": "Devices",
+   "tags": "laptop computer notebook device screen devices",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "mobile-phone",
+   "cat": "Devices",
+   "tags": "phone mobile smartphone device screen devices",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "smartwatch",
+   "cat": "Devices",
+   "tags": "smartwatch watch wearable device time devices",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "coins-dollar",
+   "cat": "Finance",
+   "tags": "coins dollar money stack currency cash finance",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "coins-scan",
+   "cat": "Finance",
+   "tags": "coins scan money detect price finance",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "coins-stack-dollar",
+   "cat": "Finance",
+   "tags": "coins stack dollar money currency finance",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "diamond",
+   "cat": "Finance",
+   "tags": "diamond gem premium value luxury value",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "diamond-bold",
+   "cat": "Finance",
+   "tags": "diamond gem premium value luxury value",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "dollar-arrows-up",
+   "cat": "Finance",
+   "tags": "dollar arrows up increase price rise finance",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "dollar-badge",
+   "cat": "Finance",
+   "tags": "dollar badge price money rosette finance",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "dollar-circle-scan",
+   "cat": "Finance",
+   "tags": "dollar circle scan price detect finance",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "dollar-cycle",
+   "cat": "Finance",
+   "tags": "dollar cycle recurring subscription billing finance",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "dollar-exchange",
+   "cat": "Finance",
+   "tags": "dollar exchange arrows swap transfer currency finance",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "dollar-growth",
+   "cat": "Finance",
+   "tags": "dollar growth chart increase revenue finance",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "dollar-network",
+   "cat": "Finance",
+   "tags": "dollar network distribution price spread finance",
+   "parametric": false,
+   "minStroke": 2.5
+  },
+  {
+   "slug": "dollar-target-coral",
+   "cat": "Finance",
+   "tags": "dollar target price crosshair goal finance",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "delivery-truck",
+   "cat": "Logistics",
+   "tags": "truck delivery shipping van transport logistics",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "dotted-journey",
+   "cat": "Logistics",
+   "tags": "journey path dotted route customer flow journey",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "free-shipping-box",
+   "cat": "Logistics",
+   "tags": "free shipping box package offer delivery logistics",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "free-shipping-truck",
+   "cat": "Logistics",
+   "tags": "free shipping truck delivery offer logistics",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "package-box",
+   "cat": "Logistics",
+   "tags": "package box carton parcel shipping logistics",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "package-clock",
+   "cat": "Logistics",
+   "tags": "package clock delivery time tracking logistics",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "package-coral",
+   "cat": "Logistics",
+   "tags": "package box parcel shipping carton logistics",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "package-multi-scan",
+   "cat": "Logistics",
+   "tags": "packages multiple scan boxes inventory logistics",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "package-plain",
+   "cat": "Logistics",
+   "tags": "package box parcel carton shipping logistics",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "package-scan",
+   "cat": "Logistics",
+   "tags": "package scan box parcel track inventory logistics",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "package-search",
+   "cat": "Logistics",
+   "tags": "package search box magnifier find inventory logistics",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "truck-clock",
+   "cat": "Logistics",
+   "tags": "truck clock delivery time schedule shipping logistics",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "book-open",
+   "cat": "Media & Files",
+   "tags": "book open read catalogue pages content",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "document",
+   "cat": "Media & Files",
+   "tags": "document file page paper sheet files",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "document-search",
+   "cat": "Media & Files",
+   "tags": "document search magnifier find file files",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "folder",
+   "cat": "Media & Files",
+   "tags": "folder directory files archive files",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "image-frame",
+   "cat": "Media & Files",
+   "tags": "image photo picture frame gallery media",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "image-product",
+   "cat": "Media & Files",
+   "tags": "image product photo flower gallery media",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "image-stack",
+   "cat": "Media & Files",
+   "tags": "images stack photos gallery multiple media",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "news-list",
+   "cat": "Media & Files",
+   "tags": "news article list feed content content",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "play-button",
+   "cat": "Media & Files",
+   "tags": "play video media start watch media",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "play-chat",
+   "cat": "Media & Files",
+   "tags": "play video chat bubble message watch media",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "briefcase",
+   "cat": "People & Support",
+   "tags": "briefcase business case work portfolio business",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "chat-document",
+   "cat": "People & Support",
+   "tags": "chat message comment document text bubble communication",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "handshake",
+   "cat": "People & Support",
+   "tags": "handshake deal partner agreement trust partnership",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "head-profile",
+   "cat": "People & Support",
+   "tags": "head profile face person silhouette people",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "heartbeat",
+   "cat": "People & Support",
+   "tags": "heart pulse heartbeat health vitals health",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "help-question",
+   "cat": "People & Support",
+   "tags": "question help faq support unknown support",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "hospital",
+   "cat": "People & Support",
+   "tags": "hospital clinic medical building health places",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "paper-plane",
+   "cat": "People & Support",
+   "tags": "send paper plane message email share communication",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "support-headset",
+   "cat": "People & Support",
+   "tags": "headset support service help agent call centre support",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "team-network",
+   "cat": "People & Support",
+   "tags": "team people network group collaboration users people",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "user-outline",
+   "cat": "People & Support",
+   "tags": "user person profile account customer people",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "dot-connector",
+   "cat": "Shapes & Layout",
+   "tags": "dots line connector pipeline flow divider abstract",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "dot-matrix",
+   "cat": "Shapes & Layout",
+   "tags": "dots matrix grid scatter data abstract",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "dots-rosette",
+   "cat": "Shapes & Layout",
+   "tags": "dots rosette circle pattern radial abstract",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "duplicate-shape",
+   "cat": "Shapes & Layout",
+   "tags": "duplicate copy clone square offset attributes",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "grid-layout",
+   "cat": "Shapes & Layout",
+   "tags": "grid layout matrix panels dashboard layout",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "layers-stack",
+   "cat": "Shapes & Layout",
+   "tags": "layers stack levels tiers depth layers",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "shape-blocks",
+   "cat": "Shapes & Layout",
+   "tags": "blocks shapes variants attributes tiles attributes",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "shapes-solid",
+   "cat": "Shapes & Layout",
+   "tags": "shapes solid square diamond circle variants attributes",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "shapes-variants",
+   "cat": "Shapes & Layout",
+   "tags": "square circle cross triangle shapes variants match attributes",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "ad-shield",
+   "cat": "Status & Markers",
+   "tags": "ad advertising shield block protection marketing",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "badge-lhr",
+   "cat": "Status & Markers",
+   "tags": "badge airport lhr london location code locations",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "badge-mum",
+   "cat": "Status & Markers",
+   "tags": "badge airport mum mumbai location code locations",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "badge-sf",
+   "cat": "Status & Markers",
+   "tags": "badge airport sf san francisco location code locations",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "bell",
+   "cat": "Status & Markers",
+   "tags": "bell notification alert reminder ring notifications",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "cricket",
+   "cat": "Status & Markers",
+   "tags": "cricket ball stumps sport game sports",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "flag",
+   "cat": "Status & Markers",
+   "tags": "flag marker milestone country pin markers",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "heart",
+   "cat": "Status & Markers",
+   "tags": "heart favourite like love wishlist favourites",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "lightbulb-dollar",
+   "cat": "Status & Markers",
+   "tags": "lightbulb idea dollar value innovation ideas",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "lightning-bolt",
+   "cat": "Status & Markers",
+   "tags": "lightning bolt fast speed power instant performance",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "megaphone",
+   "cat": "Status & Markers",
+   "tags": "megaphone announce marketing promote loud marketing",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "multilingual",
+   "cat": "Status & Markers",
+   "tags": "language multilingual translate chat localization localization",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "padlock-secure",
+   "cat": "Status & Markers",
+   "tags": "padlock lock secure privacy protected security",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "podium-outline",
+   "cat": "Status & Markers",
+   "tags": "podium steps rank tier position ranking",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "podium-steps",
+   "cat": "Status & Markers",
+   "tags": "podium steps rank winner tier ranking",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "shield-check",
+   "cat": "Status & Markers",
+   "tags": "shield check verified secure trust safe security",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "target-rank-one",
+   "cat": "Status & Markers",
+   "tags": "target rank one first crosshair position ranking",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "target-rank-two",
+   "cat": "Status & Markers",
+   "tags": "target rank two second crosshair position ranking",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "trophy",
+   "cat": "Status & Markers",
+   "tags": "trophy award win achievement prize achievement",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "calendar-clock",
+   "cat": "Time",
+   "tags": "calendar clock schedule date deadline time",
+   "parametric": false,
+   "minStroke": 4
+  },
+  {
+   "slug": "clock-cycle",
+   "cat": "Time",
+   "tags": "clock cycle recurring schedule repeat time",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "clock-face",
+   "cat": "Time",
+   "tags": "clock face time dial smile time",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "clock-ticks",
+   "cat": "Time",
+   "tags": "clock time ticks dial schedule time",
+   "parametric": true,
+   "minStroke": 1
+  },
+  {
+   "slug": "hourglass-dots",
+   "cat": "Time",
+   "tags": "hourglass time waiting duration sand time",
+   "parametric": false,
+   "minStroke": 3
+  },
+  {
+   "slug": "realtime-clock",
+   "cat": "Time",
+   "tags": "clock time realtime schedule frequency time",
+   "parametric": false,
+   "minStroke": 3
+  }
+ ]
+}

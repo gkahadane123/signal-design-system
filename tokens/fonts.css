@@ -1,0 +1,8 @@
+/* Neue Haas Grotesk Display Pro is the ONLY typeface — brand owner's rule. Family: "NHG Display Pro".
+   Licensed DS Pro OTFs self-hosted in fonts/: 35 XLt · 45 Lt · 55 Rg · 65 Md · 75 Bd · 95 Blk. */
+@font-face { font-family: "NHG Display Pro"; src: url("../fonts/NHaasGroteskDSPro-35XLt.otf") format("opentype"); font-weight: 200; font-style: normal; font-display: swap; }
+@font-face { font-family: "NHG Display Pro"; src: url("../fonts/NHaasGroteskDSPro-45Lt.otf") format("opentype"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "NHG Display Pro"; src: url("../fonts/NHaasGroteskDSPro-55Rg.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "NHG Display Pro"; src: url("../fonts/NHaasGroteskDSPro-65Md.otf") format("opentype"); font-weight: 500 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "NHG Display Pro"; src: url("../fonts/NHaasGroteskDSPro-75Bd.otf") format("opentype"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "NHG Display Pro"; src: url("../fonts/NHaasGroteskDSPro-95Blk.otf") format("opentype"); font-weight: 800 900; font-style: normal; font-display: swap; }

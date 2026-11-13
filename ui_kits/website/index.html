@@ -1,0 +1,39 @@
+<!-- @dsCard group="Website" viewport="1440x900" name="Marketing site" subtitle="Home / Platform / About — interactive, spec-derived" -->
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Intelligence Node — website kit</title>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+</head><body>
+<div id="root"></div>
+<script type="text/babel" src="Shared.jsx"></script>
+<script type="text/babel" src="Home.jsx"></script>
+<script type="text/babel" src="Platform.jsx"></script>
+<script type="text/babel" src="About.jsx"></script>
+<script type="text/babel">
+const Toast = (p) => window.SignalDesignSystem_167090.Toast(p);
+function App(){
+  const [nav, setNavRaw] = React.useState(localStorage.getItem("sig-site-nav") || "home");
+  const [demo, setDemo] = React.useState(false);
+  const [toast, setToast] = React.useState(false);
+  const setNav = (n) => { setNavRaw(n); localStorage.setItem("sig-site-nav", n); window.scrollTo(0, 0); };
+  const sent = () => { setDemo(false); setToast(true); setTimeout(() => setToast(false), 4000); };
+  return <div data-screen-label={nav}>
+    <SiteHeader nav={nav} setNav={setNav} onDemo={() => setDemo(true)} />
+    {nav === "home" && <HomeScreen onDemo={() => setDemo(true)} setNav={setNav} />}
+    {nav === "platform" && <PlatformScreen onDemo={() => setDemo(true)} />}
+    {nav === "about" && <AboutScreen onDemo={() => setDemo(true)} />}
+    <SiteFooter setNav={setNav} />
+    <DemoDialog open={demo} onClose={() => setDemo(false)} onSent={sent} />
+    {toast && <div style={{position:"fixed",bottom:24,right:24,zIndex:120}}>
+      <Toast tone="signal" message="Request sent" detail="We reply within one business day" onDismiss={() => setToast(false)} /></div>}
+  </div>;
+}
+(function mount(tries){
+  if (window.SignalDesignSystem_167090 && window.HomeScreen) {
+    ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+  } else if (tries < 200) { setTimeout(() => mount(tries + 1), 50); }
+  else { document.getElementById("root").textContent = "Design-system bundle failed to load (_ds_bundle.js)."; }
+})(0);
+</script></body></html>

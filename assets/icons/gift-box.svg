@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M88.62 5L61.44 5C59.78 5 58.44 6.34 58.44 8C58.44 9.66 59.78 11 61.44 11L88.64 11C89.39 11 90 11.61 90 12.37L90 29.63C90 30.39 89.39 31 88.64 31L7.37 31C6.62 31 6 30.39 6 29.63L6 12.37C6 11.61 6.62 11 7.37 11L41.44 11L41.44 5L7.37 5C3.3 5 0 8.3 0 12.37L0 29.63C0 33.7 3.3 37 7.37 37L88.64 37C92.7 37 96 33.7 96 29.64L96 12.37C96 8.3 92.7 5 88.62 5Z" fill="currentColor" stroke="none"></path>
+<path d="M76.63 31L19.37 31C15.3 31 12 34.3 12 38.37L12 88.63C12 92.7 15.3 96 19.37 96L76.63 96C80.7 96 84 92.7 84 88.63L84 38.37C84 34.3 80.7 31 76.63 31ZM76.63 37C77.39 37 78 37.61 78 38.37L78 88.63C78 89.39 77.39 90 76.63 90L19.37 90C18.61 90 18 89.39 18 88.63L18 38.37C18 37.61 18.61 37 19.37 37L76.63 37Z" fill="currentColor" stroke="none"></path>
+<path d="M26 5L20 5L20 37L26 37L26 5Z" fill="currentColor" stroke="none"></path>
+<path d="M76 5L70 5L70 37L76 37L76 5Z" fill="currentColor" stroke="none"></path>
+<path d="M36 31L30 31L30 96L36 96L36 31Z" fill="currentColor" stroke="none"></path>
+<path d="M66 31L60 31L60 96L66 96L66 31Z" fill="currentColor" stroke="none"></path>
+<path d="M48.71 7.55C48.71 11.72 45.26 15.1 41 15.1C36.74 15.1 33.29 11.72 33.29 7.55C33.29 3.38 36.74 0 41 0C45.26 0 48.71 3.38 48.71 7.55Z" fill="var(--icon-accent, #FF6666)" stroke="none"></path>
+</svg>

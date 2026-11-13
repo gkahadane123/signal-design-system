@@ -1,0 +1,49 @@
+/* Signal palette — 8 colors, 3 tiers (spec §4). All UI tints derive from these via opacity; no other named colors exist. */
+:root{
+  /* Tier 1 — Primary. Fill/display only; never small text (2.49:1 on Paper). */
+  --coral:#FF6666;
+  /* Tier 2 — Secondary, marketing collateral */
+  --blush:#F5C4B3;
+  --astronaut:#28336F;
+  --reef:#123D3A;
+  --aqua:#3DE0C8; /* doubles as semantic "signal" */
+  /* Tier 3 — Regular */
+  --paper:#F2EFE9;
+  --surface:#FCFBF8;
+  --ink:#161418;
+
+  /* Opacity-derived tints — the only legal way to make new UI colors */
+  --tint-ink-4:rgb(22 20 24/.04); --tint-ink-6:rgb(22 20 24/.06); --tint-ink-8:rgb(22 20 24/.08);
+  --tint-ink-12:rgb(22 20 24/.12); --tint-ink-18:rgb(22 20 24/.18); --tint-ink-24:rgb(22 20 24/.24);
+  --tint-ink-48:rgb(22 20 24/.48); --tint-ink-64:rgb(22 20 24/.64);
+  --tint-paper-8:rgb(242 239 233/.08); --tint-paper-16:rgb(242 239 233/.16);
+  --tint-paper-64:rgb(242 239 233/.64); --tint-paper-80:rgb(242 239 233/.8);
+  --tint-coral-12:rgb(255 102 102/.12); --tint-coral-24:rgb(255 102 102/.24);
+  --tint-aqua-16:rgb(61 224 200/.16); --tint-aqua-32:rgb(61 224 200/.32);
+
+  /* Semantic aliases */
+  --bg:var(--paper);
+  --surface-card:var(--surface);
+  --text-body:var(--ink);
+  --text-muted:var(--tint-ink-64);
+  --text-subtle:var(--tint-ink-48);
+  --text-on-dark:var(--paper);
+  --accent:var(--coral);           /* fills + CTAs only */
+  --text-on-coral:#FFFFFF;         /* IMPORTANT: all text/labels on #FF6666 are white — brand owner's rule */
+  --signal:var(--aqua);            /* live/positive signal */
+  --border-hairline:var(--tint-ink-12);
+  --border-strong:var(--tint-ink-24);
+  --grid-line:var(--tint-ink-8);   /* structural lines are neutral — never coral */
+  --focus-ring:var(--aqua);
+}
+/* Dark mode — SECONDARY, in refinement (spec: light is primary and stable) */
+[data-theme="dark"]{
+  --bg:var(--ink);
+  --surface-card:rgb(242 239 233/.06);
+  --text-body:var(--paper);
+  --text-muted:var(--tint-paper-64);
+  --text-subtle:rgb(242 239 233/.48);
+  --border-hairline:var(--tint-paper-16);
+  --border-strong:rgb(242 239 233/.32);
+  --grid-line:var(--tint-paper-8);
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M52.06 54.44C51.47 53.86 50.52 53.86 49.94 54.44C49.35 55.02 49.35 55.98 49.94 56.56L66.96 73.58C67.54 74.17 68.49 74.17 69.08 73.58C69.66 73 69.66 72.04 69.08 71.46L52.06 54.44Z" fill="currentColor" stroke="currentColor" stroke-width="0.26"></path>
+<path d="M43.94 54.44C44.52 53.86 45.48 53.86 46.06 54.44C46.64 55.02 46.64 55.98 46.06 56.56L29.04 73.58C28.45 74.17 27.5 74.17 26.92 73.58C26.33 73 26.33 72.04 26.92 71.46L43.94 54.44Z" fill="currentColor" stroke="currentColor" stroke-width="0.26"></path>
+<path d="M55.71 54C55.71 58.17 52.26 61.55 48 61.55C43.74 61.55 40.29 58.17 40.29 54C40.29 49.83 43.74 46.45 48 46.45C52.26 46.45 55.71 49.83 55.71 54Z" fill="var(--icon-accent, #FF6666)" stroke="none"></path>
+<path d="M48 0C21.49 0 0 21.49 0 48C0 74.51 21.49 96 48 96C74.51 96 96 74.51 96 48C96 21.49 74.51 0 48 0ZM48 3C72.81 3 93 23.19 93 48C93 72.81 72.81 93 48 93C23.19 93 3 72.81 3 48C3 23.19 23.19 3 48 3Z" fill="currentColor" stroke="none"></path>
+<path d="M29.08 27.86L20 36.94"></path>
+<path d="M20 27.86L29.08 36.94"></path>
+<path d="M76 27.86L66.92 36.94"></path>
+<path d="M66.92 27.86L76 36.94"></path>
+<path d="M93.91 48L88.91 48"></path>
+<path d="M6 48L1 48"></path>
+<path d="M47.46 94.46L47.46 89.46"></path>
+<path d="M47.46 6.54L47.46 1.54"></path>
+</svg>

@@ -1,0 +1,23 @@
+/* Intelligence Node duotone icon set — 151 icons, 96px grid, 3px stroke, two colors only.
+   Ink flows through currentColor; accent is the coral brand token. NEVER render below 48px:
+   a 3px stroke on a 96 grid becomes 0.75px at 24px and disintegrates (needs an optical 2px redraw). */
+:root{
+  --icon-ink:#4D4F5C;            /* canonical icon ink (library value; #000000 "ink-alt" is retired) */
+  --icon-accent:var(--coral);    /* #FF6666 — marks the SUBJECT of the icon, never decoration.
+                                    Monochrome: pass accent="currentColor" to <Icon> (or set --icon-accent inline). */
+  --icon-grid:96; /* @kind other */
+  --icon-stroke:3; /* @kind other */
+  --icon-size:48px;
+  --icon-size-sm:48px;           /* minimum supported */
+  --icon-size-md:64px;
+  --icon-size-lg:96px;
+}
+[data-theme="dark"]{--icon-ink:#E8E9ED}  /* ink flips, accent does not */
+.icon{display:inline-block;width:var(--icon-size);height:var(--icon-size);color:var(--icon-ink);flex:none;vertical-align:middle}
+.icon svg{width:100%;height:100%;display:block}
+.icon--mono svg [fill="#FF6666"],.icon--mono svg [stroke="#FF6666"]{fill:currentColor;stroke:currentColor}
+.icon--sm{width:var(--icon-size-sm);height:var(--icon-size-sm)}
+.icon--md{width:var(--icon-size-md);height:var(--icon-size-md)}
+.icon--lg{width:var(--icon-size-lg);height:var(--icon-size-lg)}
+.icon--action{transition:color var(--dur-fast) var(--ease-out)}
+.icon--action:hover{color:var(--icon-accent)}
